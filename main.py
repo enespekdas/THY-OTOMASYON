@@ -8,6 +8,6 @@ from cleanup.cleanup_processor import cleanup_managed_systems_from_excel
 from logic.processor import process_all_rows
 
 if __name__ == "__main__":
-    #process_all_rows()
+    process_all_rows()
 
-    cleanup_managed_systems_from_excel()
+    #cleanup_managed_systems_from_excel()
