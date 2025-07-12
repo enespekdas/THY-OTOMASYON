@@ -1,7 +1,10 @@
-def process_row(row: dict):
-    """
-    Excel'den gelen tek bir satırı alır, iş kurallarına göre API çağrıları yapar.
-    """
+from excel.reader import read_excel_data
+from utils.logger import log_message
+from config.settings import *
+from logic.validators import parse_applications, separate_managed_system_types
+
+
+def process_row(row_index: int, row: dict):
     target_user = row.get('Target system user name')
     target_address = row.get('Target system address')
     application = row.get('Application')
@@ -9,7 +12,27 @@ def process_row(row: dict):
     port = row.get('Port')
     db_name = row.get('DatabaseName')
 
-    # Buraya iş mantığını koyacağız, örnek:
-    print(f"Processing {target_address} for user {target_user} with application {application}")
-    # Örnek: Windows platform mu Linux mu kontrol et, ona göre managed system ekle
-    # Sonra managed account ekle, application linkle vs.
+    # Log mesajı
+    message = (
+        f"Row {row_index + 2}: "  # +2 çünkü 0 index + 1 header
+        f"İşlem yapılıyor: "
+        f"Managed Account -> {target_user} *** "
+        f"Managed System -> {target_address} *** "
+        f"Application -> {application} *** "
+        f"Users -> {users} *** "
+        f"Port -> {port} *** "
+        f"Database -> {db_name}"
+    )
+    log_message(message)
+
+    app_list = parse_applications(application)
+    system_types, account_apps = separate_managed_system_types(app_list)
+
+    print("Managed System tipleri:", system_types)  # ['SSH', 'WINSCP']
+    print("Managed Account uygulamaları:", account_apps)  # ['SQL DEV']
+
+
+def process_all_rows():
+    df = read_excel_data(EXCEL_FILE_PATH)
+    for index, row in df.iterrows():
+        process_row(index, row.to_dict())

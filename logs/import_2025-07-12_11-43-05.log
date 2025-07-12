@@ -1,0 +1,9 @@
+[2025-07-12 11:43:05] Row 2: İşlem yapılıyor: Managed Account -> pam118064 *** Managed System -> 10.50.50.101 *** Application -> RDP *** Users -> S_OZCAN *** Port -> nan *** Database -> nan
+[2025-07-12 11:43:05] Row 3: İşlem yapılıyor: Managed Account -> pam118064 *** Managed System -> ISTPCARKPWVA01V *** Application -> RDP *** Users -> S_OZCAN *** Port -> nan *** Database -> nan
+[2025-07-12 11:43:05] Row 4: İşlem yapılıyor: Managed Account -> pam118064 *** Managed System -> 10.50.50.56 *** Application -> SSH *** Users -> S_OZCAN *** Port -> nan *** Database -> nan
+[2025-07-12 11:43:05] Row 5: İşlem yapılıyor: Managed Account -> pam118064 *** Managed System -> 10.50.50.56 *** Application -> WINSCP *** Users -> S_OZCAN *** Port -> nan *** Database -> nan
+[2025-07-12 11:43:05] Row 6: İşlem yapılıyor: Managed Account -> pam118064 *** Managed System -> 10.50.50.60 *** Application -> SSH, WINSCP *** Users -> S_OZCAN *** Port -> nan *** Database -> nan
+[2025-07-12 11:43:05] Row 7: İşlem yapılıyor: Managed Account -> trax_projects *** Managed System -> teknik2-scan1.teknik.thynet.thy.com *** Application -> SQL DEV *** Users -> S_OZCAN,Y_UCUNCUOGLU *** Port -> 1521.0 *** Database -> teknik2
+[2025-07-12 11:43:05] Row 8: İşlem yapılıyor: Managed Account -> trax_projects *** Managed System -> teknik2-scan1.teknik.thynet.thy.com *** Application -> DBAVER *** Users -> S_OZCAN,Y_UCUNCUOGLU *** Port -> 1521.0 *** Database -> teknik2
+[2025-07-12 11:43:05] Row 9: İşlem yapılıyor: Managed Account -> root *** Managed System -> 10.50.50.56 *** Application -> SSH, WINSCP *** Users -> A_OZKAL,S_OZCAN,Y_UCUNCUOGLU *** Port -> nan *** Database -> nan
+[2025-07-12 11:43:05] Row 10: İşlem yapılıyor: Managed Account -> administrator *** Managed System -> 10.50.50.101 *** Application -> RDP *** Users -> A_OZKAL,S_OZCAN,Y_UCUNCUOGLU *** Port -> nan *** Database -> nan
