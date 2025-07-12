@@ -6,6 +6,11 @@ AUTH_KEY = "043f1686e106b3f64c0fcb07b1a66168f09675aa74d7f6999c6109e2628ffe734cc0
 RUNAS_USER = "btadmin"
 EXCEL_FILE_PATH = "excel/data.xlsx"
 WORKGROUP_ID = 2  # Beyondtrust Workgroup
+DOMAIN_MANAGED_SYSTEM_ID = 2  # Domain'e ait managed system ID
+DOMAIN_NAME = "quasys.local"
+DEFAULT_AD_PASSWORD = "Qqweqwe"
+
+
 TEST_TAG = "btps-auto"
 
 # Windows Managed System create template
