@@ -38,3 +38,31 @@ WINDOWS_MANAGED_SYSTEM_TEMPLATE = {
     "IsApplicationHost": "false"
 }
 
+# Linux Managed System create template
+
+LINUX_MANAGED_SYSTEM_TEMPLATE = {
+    "EntityTypeID": 1,
+    "WorkgroupID": 2,
+    "HostName": "",
+    "DnsName": "",
+    "IPAddress": "",
+    "SystemName": "",
+    "PlatformID": 2,
+    "Port": 22,
+    "Timeout": 30,
+    "ReleaseDuration": 120,
+    "MaxReleaseDuration": 10079,
+    "ISAReleaseDuration": 120,
+    "AutoManagementFlag": "false",
+    "FunctionalAccountID": "null",
+    "LoginAccountID": "null",
+    "ElevationCommand": "null",
+    "SshKeyEnforcementMode": 0,
+    "CheckPasswordFlag": "false",
+    "ChangePasswordAfterAnyReleaseFlag": "false",
+    "ResetPasswordOnMismatchFlag": "false",
+    "ChangeFrequencyType": "first",
+    "ChangeFrequencyDays": 30,
+    "ChangeTime": "23:30",
+    "AccountNameFormat": 0,
+    }

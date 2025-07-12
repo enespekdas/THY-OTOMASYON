@@ -21,17 +21,11 @@ def process_row(row_index: int, row: dict):
 
     if not target_ip:
         log_error(row_index+2, "Hostname çözümlenemedi.", error_type="Network", hostname=target_address)
-        log_message(f"Row {row_index+2}:  Excel Satır: IP çözümlenemediği için işlem atlandı.")
+        log_message(f"Row {row_index+2}: Excel Satır: IP çözümlenemediği için işlem atlandı.")
         return
 
-    message = (
-        f"Row {row_index + 2}: İşlem yapılıyor: Managed Account -> {target_user} "
-        f"*** Managed System -> {target_address} "
-        f"*** Application -> {application} "
-        f"*** Users -> {users} "
-        f"*** Port -> {port} "
-        f"*** Database -> {db_name}"
-    )
+    message = f"Row {row_index + 2}: İşlem: Account={target_user} | System={target_address} | App={application} | Users={users} | Port={port} | DB={db_name}"
+
     log_message(message)
 
     app_list = parse_applications(application)
