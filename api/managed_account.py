@@ -84,6 +84,74 @@ def ensure_ad_managed_account(account_name: str, row_index: int):
     else:
         create_ad_managed_account(account_name, row_index)
 
+def ensure_local_managed_account(account_name: str, target_ip: str, row_index: int):
+    from api.managed_system import get_all_managed_systems
+
+    systems = get_all_managed_systems()
+    target_system = next((s for s in systems if str(s.get("IPAddress", "")).strip() == target_ip.strip()), None)
+
+    if not target_system:
+        log_error(
+            row_index + 2,
+            f"IP '{target_ip}' için hedef managed system bulunamadı (local hesap ekleme iptal).",
+            error_type="LocalAccount",
+            hostname=target_ip
+        )
+        return
+
+    target_system_id = target_system.get("ManagedSystemID")
+    existing_accounts = get_all_managed_accounts(target_system_id)
+    exists = any(acct.get("AccountName") == account_name for acct in existing_accounts)
+
+    if exists:
+        log_message(f"Row {row_index + 2}: Local Managed Account '{account_name}' zaten mevcut. Atlandı.")
+        return
+
+    session_id = os.getenv("ASP_NET_SESSION_ID")
+    if not session_id:
+        log_error(
+            row_index + 2,
+            "Session ID bulunamadı (local hesap ekleme).",
+            error_type="LocalAccount",
+            hostname=target_ip
+        )
+        return
+
+    url = f"{API_URL}/ManagedSystems/{target_system_id}/ManagedAccounts"
+    headers = {
+        "Content-Type": "application/json",
+        "Cookie": f"ASP.NET_SessionId={session_id}"
+    }
+
+    payload = {
+        "AccountName": account_name,
+        "Password": DEFAULT_AD_PASSWORD,
+        "PasswordRuleID": 0,
+        "WorkgroupID": WORKGROUP_ID,
+        "ObjectID": None,
+        "DomainName": None
+    }
+
+    try:
+        response = requests.post(url, json=payload, headers=headers, verify=False)
+        if response.status_code == 201:
+            log_message(f"Row {row_index + 2}: Local Managed Account '{account_name}' başarıyla oluşturuldu.")
+        else:
+            log_error(
+                row_index + 2,
+                f"Local hesap oluşturulamadı: {response.status_code} - {response.text}",
+                error_type="LocalAccount",
+                hostname=target_ip
+            )
+    except Exception as e:
+        log_error(
+            row_index + 2,
+            f"API hatası (local hesap): {str(e)}",
+            error_type="LocalAccount",
+            hostname=target_ip
+        )
+
+
 
 def link_ad_account_to_managed_system(account_name: str, target_ip: str, row_index: int, app_list: list = None):
     from api.managed_system import get_all_managed_systems  # döngüsel importu önlemek için içeride import ettik

@@ -44,7 +44,8 @@ def process_row(row_index: int, row: dict):
         ensure_ad_managed_account(target_user, row_index)
         # link_ad_account_to_managed_system fonksiyonuna uygulama listesini de gönderiyoruz
         link_ad_account_to_managed_system(target_user, target_ip, row_index, app_list)
-
+    else:
+        ensure_local_managed_account(target_user, target_ip, row_index)
 
 def process_all_rows():
     df = read_excel_data(EXCEL_FILE_PATH)
