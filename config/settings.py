@@ -9,6 +9,7 @@ WORKGROUP_ID = 2  # Beyondtrust Workgroup
 DOMAIN_MANAGED_SYSTEM_ID = 2  # Domain'e ait managed system ID
 DOMAIN_NAME = "quasys.local"
 DEFAULT_AD_PASSWORD = "Qqweqwe"
+SMART_RULE_PREFIX = "THY_MA"
 
 
 TEST_TAG = "btps-auto"

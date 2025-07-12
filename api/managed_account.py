@@ -8,6 +8,7 @@ from config.settings import (
     WORKGROUP_ID
 )
 from utils.logger import log_message, log_error
+from api.smartrules import create_smart_rule
 
 
 def get_all_managed_accounts(managed_system_id: int):
@@ -36,8 +37,7 @@ def get_all_managed_accounts(managed_system_id: int):
         log_error(-1, f"API çağrısı sırasında hata (account list): {str(e)}", error_type="AccountList")
         return []
 
-
-def create_ad_managed_account(account_name: str, row_index: int):
+def create_ad_managed_account(account_name: str, row_index: int, target_ip: str = None):
     session_id = os.getenv("ASP_NET_SESSION_ID")
     if not session_id:
         log_error(row_index + 2, "Session ID bulunamadı (create AD account).", error_type="Session")
@@ -65,6 +65,8 @@ def create_ad_managed_account(account_name: str, row_index: int):
         response = requests.post(url, json=payload, headers=headers, verify=False)
         if response.status_code == 201:
             log_message(f"Row {row_index + 2}: AD Managed Account '{account_name}' başarıyla oluşturuldu.")
+            if target_ip:
+                create_smart_rule(account_name, target_ip, row_index)
         else:
             log_error(
                 row_index + 2,
@@ -74,26 +76,31 @@ def create_ad_managed_account(account_name: str, row_index: int):
     except Exception as e:
         log_error(row_index + 2, f"AD Managed Account API hatası: {str(e)}", error_type="Create")
 
-
-def ensure_ad_managed_account(account_name: str, row_index: int):
+def ensure_ad_managed_account(account_name: str, row_index: int, target_ip: str = None):
     accounts = get_all_managed_accounts(DOMAIN_MANAGED_SYSTEM_ID)
     exists = any(acct.get("AccountName") == account_name for acct in accounts)
 
     if exists:
         log_message(f"Row {row_index + 2}: AD Managed Account '{account_name}' zaten mevcut. Atlandı.")
+        if target_ip:
+            create_smart_rule(account_name, target_ip, row_index)
     else:
-        create_ad_managed_account(account_name, row_index)
+        create_ad_managed_account(account_name, row_index, target_ip)
 
-def ensure_local_managed_account(account_name: str, target_ip: str, row_index: int):
+def ensure_local_managed_account(account_name: str, target_ip: str, row_index: int, app_list: list = None):
     from api.managed_system import get_all_managed_systems
+
+    if app_list is None:
+        app_list = []
 
     systems = get_all_managed_systems()
     target_system = next((s for s in systems if str(s.get("IPAddress", "")).strip() == target_ip.strip()), None)
 
     if not target_system:
+        apps_str = ", ".join(app_list) if app_list else "Uygulama bilgisi yok"
         log_error(
             row_index + 2,
-            f"IP '{target_ip}' için hedef managed system bulunamadı (local hesap ekleme iptal).",
+            f"IP '{target_ip}' için hedef managed system bulunamadı (local hesap ekleme iptal). Application Column List: {apps_str}",
             error_type="LocalAccount",
             hostname=target_ip
         )
@@ -105,6 +112,8 @@ def ensure_local_managed_account(account_name: str, target_ip: str, row_index: i
 
     if exists:
         log_message(f"Row {row_index + 2}: Local Managed Account '{account_name}' zaten mevcut. Atlandı.")
+        if target_ip:
+            create_smart_rule(account_name, target_ip, row_index)
         return
 
     session_id = os.getenv("ASP_NET_SESSION_ID")
@@ -136,6 +145,7 @@ def ensure_local_managed_account(account_name: str, target_ip: str, row_index: i
         response = requests.post(url, json=payload, headers=headers, verify=False)
         if response.status_code == 201:
             log_message(f"Row {row_index + 2}: Local Managed Account '{account_name}' başarıyla oluşturuldu.")
+            create_smart_rule(account_name, target_ip, row_index)
         else:
             log_error(
                 row_index + 2,
@@ -150,8 +160,6 @@ def ensure_local_managed_account(account_name: str, target_ip: str, row_index: i
             error_type="LocalAccount",
             hostname=target_ip
         )
-
-
 
 def link_ad_account_to_managed_system(account_name: str, target_ip: str, row_index: int, app_list: list = None):
     from api.managed_system import get_all_managed_systems  # döngüsel importu önlemek için içeride import ettik
@@ -201,8 +209,12 @@ def link_ad_account_to_managed_system(account_name: str, target_ip: str, row_ind
         response = requests.post(url, headers=headers, verify=False)
         if response.status_code in [200, 201]:  # Başarı durumları
             log_message(f"Row {row_index + 2}: AD hesabı '{account_name}' → IP {target_ip} sistemine başarıyla linklendi.")
+            create_smart_rule(account_name, target_ip, row_index)  # Burada smart rule çağrısı
+
         elif response.status_code == 409:
             log_message(f"Row {row_index + 2}: AD hesabı '{account_name}' zaten linkli. Atlandı.")
+            create_smart_rule(account_name, target_ip, row_index)  # Burada smart rule çağrısı
+
         else:
             log_error(
                 row_index + 2,

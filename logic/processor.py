@@ -4,7 +4,7 @@ from config.settings import EXCEL_FILE_PATH
 from logic.validators import parse_applications, separate_managed_system_types
 from logic.network import resolve_target_address
 from api.managed_system import ensure_managed_system_rdp, ensure_managed_system_ssh
-from api.managed_account import ensure_ad_managed_account, link_ad_account_to_managed_system
+from api.managed_account import ensure_ad_managed_account, link_ad_account_to_managed_system,ensure_local_managed_account
 
 
 def process_row(row_index: int, row: dict):
@@ -45,7 +45,7 @@ def process_row(row_index: int, row: dict):
         # link_ad_account_to_managed_system fonksiyonuna uygulama listesini de gönderiyoruz
         link_ad_account_to_managed_system(target_user, target_ip, row_index, app_list)
     else:
-        ensure_local_managed_account(target_user, target_ip, row_index)
+        ensure_local_managed_account(target_user, target_ip, row_index, app_list=app_list)
 
 def process_all_rows():
     df = read_excel_data(EXCEL_FILE_PATH)
