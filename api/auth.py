@@ -10,7 +10,7 @@ def sign_app_in() -> Optional[str]:
     Login yapar, session cookie'yi ortam değişkenine set eder.
     Token varsa döner, yoksa None.
     """
-    url = f"{settings.API_BASE_URL}/Auth/SignAppin"
+    url = f"{settings.API_URL}/Auth/SignAppin"
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"PS-Auth key={settings.AUTH_KEY}; runas={settings.RUNAS_USER};"
