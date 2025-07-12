@@ -37,7 +37,10 @@ def process_row(row_index: int, row: dict):
     if "RDP" in system_types:
         ensure_managed_system_rdp(target_ip, target_dns, target_user, row_index)
 
+
 def process_all_rows():
     df = read_excel_data(EXCEL_FILE_PATH)
     for index, row in df.iterrows():
         process_row(index, row.to_dict())
+
+## print sa
