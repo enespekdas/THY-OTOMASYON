@@ -10,6 +10,7 @@ from api.managed_account import (
     ensure_local_managed_account
 )
 from api.applications import assign_apps_to_account
+from api.user_groups import ensure_user_groups
 
 def process_row(row_index: int, row: dict):
     target_user = row.get('Target system user name')
@@ -51,7 +52,9 @@ def process_row(row_index: int, row: dict):
         ensure_managed_system_ssh(target_ip, target_dns, row_index)
 
     # Managed account işlemleri
-    if target_user.lower().startswith("pam"):
+    is_domain_account = target_user.lower().startswith("pam")
+
+    if is_domain_account:
         ensure_ad_managed_account(target_user, row_index)
         link_ad_account_to_managed_system(target_user, target_ip, row_index, app_list)
 
@@ -74,8 +77,13 @@ def process_row(row_index: int, row: dict):
                 app_list=account_apps,
                 is_domain=False,
                 row_index=row_index,
-                domain_system_id=None  # local için kullanılmıyor
+                domain_system_id=None
             )
+
+    # User Group işlemleri (sadece varsa)
+    if users:
+        users_list = [u.strip() for u in users.split(",") if u.strip()]
+        ensure_user_groups(users_list, row_index)
 
 def process_all_rows():
     df = read_excel_data(EXCEL_FILE_PATH)

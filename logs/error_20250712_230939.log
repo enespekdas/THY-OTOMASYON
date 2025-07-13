@@ -1,5 +1,0 @@
-2025-07-12 23:09:52 - Excel Row 6 -- [Error Type] = Network -- [Hostname] = standby3.quasys.locals -- Hostname çözümlenemedi.
-2025-07-12 23:09:52 - Excel Row 7 -- [Error Type] = LocalAccount -- [Hostname] = 192.168.10.20 -- IP '192.168.10.20' için hedef managed system bulunamadı (local hesap ekleme iptal). Application Column List: SQL DEV
-2025-07-12 23:09:52 - Excel Row 7 -- [Error Type] = ApplicationAssign -- [Hostname] = 192.168.10.20 -- Managed system bulunamadı (IP: 192.168.10.20).
-2025-07-12 23:09:52 - Excel Row 8 -- [Error Type] = LocalAccount -- [Hostname] = 192.168.10.37 -- IP '192.168.10.37' için hedef managed system bulunamadı (local hesap ekleme iptal). Application Column List: DBAVER
-2025-07-12 23:09:52 - Excel Row 8 -- [Error Type] = ApplicationAssign -- [Hostname] = 192.168.10.37 -- Managed system bulunamadı (IP: 192.168.10.37).
