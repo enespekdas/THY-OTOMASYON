@@ -96,6 +96,20 @@ def assign_smartrule_to_group(group_id: int, smart_rule_id: int, access_level_id
         response = requests.post(url, json=payload, headers=headers, verify=False)
         if response.status_code in [200, 201]:
             log_message(f"Row {row_index + 2}: SmartRule (ID: {smart_rule_id}) başarıyla UserGroup (ID: {group_id})'a yetkilendirildi.")
+
+            # --- Yeni Eklenen Adım: Role ve AccessPolicy Atama ---
+            role_url = f"{API_URL}/UserGroups/{group_id}/SmartRules/{smart_rule_id}/Roles"
+            role_payload = {
+                "Roles": [{"RoleID": "3"}],
+                "AccessPolicyID": ACCESS_POLICY_ID
+            }
+
+            role_response = requests.post(role_url, json=role_payload, headers=headers, verify=False)
+            if role_response.status_code in [200, 204]:
+                log_message(f"Row {row_index + 2}: Role ve AccessPolicy başarıyla atandı → GroupID: {group_id}, SmartRuleID: {smart_rule_id}")
+            else:
+                log_error(row_index + 2, f"Role ataması başarısız: {role_response.status_code} - {role_response.text}", error_type="SmartRuleRoleAssign")
+
             return True
         else:
             log_error(row_index + 2, f"SmartRule yetkilendirme başarısız: {response.status_code} - {response.text}", error_type="SmartRuleAssign")
