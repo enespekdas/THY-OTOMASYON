@@ -5,7 +5,8 @@ from config.settings import (
     DOMAIN_MANAGED_SYSTEM_ID,
     DOMAIN_NAME,
     DEFAULT_AD_PASSWORD,
-    WORKGROUP_ID
+    WORKGROUP_ID,
+    ACCESS_POLICY_ID
 )
 from utils.logger import log_message, log_error
 from api.smartrules import create_smart_rule

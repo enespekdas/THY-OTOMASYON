@@ -11,7 +11,7 @@ DOMAIN_NAME = "quasys.local"
 DEFAULT_AD_PASSWORD = "Qqweqwe"
 SMART_RULE_PREFIX = "THY_MA"
 LOCAL_GROUP_PERMISSION="[{ PermissionID: 52, AccessLevelID: 1 },	{ PermissionID: 76, AccessLevelID: 3 },	{ PermissionID: 77, AccessLevelID: 1 }]"
-
+ACCESS_POLICY_ID="5000"
 TEST_TAG = "btps-auto"
 
 # Windows Managed System create template

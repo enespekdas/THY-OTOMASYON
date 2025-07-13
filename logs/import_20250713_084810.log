@@ -1,0 +1,153 @@
+2025-07-13 08:48:10 - Row 2: İşlem başlatıldı → Account='pam118064', System='192.168.10.125', App='RDP', Users='S_OZCAN', Port='nan', DB='nan'
+2025-07-13 08:48:10 - Row 2: Managed System tipleri: ['RDP']
+2025-07-13 08:48:10 - Row 2: Managed Account uygulamaları: []
+2025-07-13 08:48:10 - Row 2: IP 192.168.10.125 zaten managed system olarak mevcut. Atlandı.
+2025-07-13 08:48:10 - Row 2: AD Managed Account 'pam118064' zaten mevcut. Atlandı.
+2025-07-13 08:48:11 - Row 2: AD hesabı 'pam118064' → IP 192.168.10.125 sistemine başarıyla linklendi.
+2025-07-13 08:48:11 - Row 2: SmartRule 'THY_MA_pam118064' zaten mevcut. Atlandı.
+2025-07-13 08:48:11 - Row 2: ensure_user_groups_and_assign_smartrule fonksiyonu çağrıldı, user sayısı: 1
+2025-07-13 08:48:11 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:11 - UserGroups listesi başarıyla alındı.
+2025-07-13 08:48:11 - Row 2: İşlem yapılan user/group: S_OZCAN
+2025-07-13 08:48:11 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:11 - SmartRules listesi başarıyla alındı.
+2025-07-13 08:48:11 - SmartRule bulundu: THY_MA_pam118064 (ID: 10017)
+2025-07-13 08:48:11 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:11 - Row 2: SmartRule (ID: 10017) başarıyla UserGroup (ID: 27)'a yetkilendirildi.
+2025-07-13 08:48:11 - Row 3: İşlem başlatıldı → Account='pam118064', System='master.quasys.local', App='RDP', Users='S_OZCAN', Port='nan', DB='nan'
+2025-07-13 08:48:11 - Row 3: Managed System tipleri: ['RDP']
+2025-07-13 08:48:11 - Row 3: Managed Account uygulamaları: []
+2025-07-13 08:48:11 - Row 3: IP 192.168.10.32 zaten managed system olarak mevcut. Atlandı.
+2025-07-13 08:48:11 - Row 3: AD Managed Account 'pam118064' zaten mevcut. Atlandı.
+2025-07-13 08:48:12 - Row 3: AD hesabı 'pam118064' → IP 192.168.10.32 sistemine başarıyla linklendi.
+2025-07-13 08:48:12 - Row 3: SmartRule 'THY_MA_pam118064' zaten mevcut. Atlandı.
+2025-07-13 08:48:12 - Row 3: ensure_user_groups_and_assign_smartrule fonksiyonu çağrıldı, user sayısı: 1
+2025-07-13 08:48:12 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:12 - UserGroups listesi başarıyla alındı.
+2025-07-13 08:48:12 - Row 3: İşlem yapılan user/group: S_OZCAN
+2025-07-13 08:48:12 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:12 - SmartRules listesi başarıyla alındı.
+2025-07-13 08:48:12 - SmartRule bulundu: THY_MA_pam118064 (ID: 10017)
+2025-07-13 08:48:12 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:12 - Row 3: SmartRule (ID: 10017) başarıyla UserGroup (ID: 27)'a yetkilendirildi.
+2025-07-13 08:48:12 - Row 4: İşlem başlatıldı → Account='pam118064', System='192.168.10.33', App='SSH', Users='S_OZCAN', Port='nan', DB='nan'
+2025-07-13 08:48:12 - Row 4: Managed System tipleri: ['SSH']
+2025-07-13 08:48:12 - Row 4: Managed Account uygulamaları: []
+2025-07-13 08:48:12 - Row 4: IP 192.168.10.33 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-13 08:48:12 - Row 4: AD Managed Account 'pam118064' zaten mevcut. Atlandı.
+2025-07-13 08:48:13 - Row 4: AD hesabı 'pam118064' → IP 192.168.10.33 sistemine başarıyla linklendi.
+2025-07-13 08:48:13 - Row 4: SmartRule 'THY_MA_pam118064' zaten mevcut. Atlandı.
+2025-07-13 08:48:13 - Row 4: ensure_user_groups_and_assign_smartrule fonksiyonu çağrıldı, user sayısı: 1
+2025-07-13 08:48:13 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:13 - UserGroups listesi başarıyla alındı.
+2025-07-13 08:48:13 - Row 4: İşlem yapılan user/group: S_OZCAN
+2025-07-13 08:48:13 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:13 - SmartRules listesi başarıyla alındı.
+2025-07-13 08:48:13 - SmartRule bulundu: THY_MA_pam118064 (ID: 10017)
+2025-07-13 08:48:13 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:13 - Row 4: SmartRule (ID: 10017) başarıyla UserGroup (ID: 27)'a yetkilendirildi.
+2025-07-13 08:48:13 - Row 5: İşlem başlatıldı → Account='pam118065', System='192.168.10.34', App='WINSCP,TOAD', Users='S_OZCAN', Port='nan', DB='nan'
+2025-07-13 08:48:13 - Row 5: Managed System tipleri: []
+2025-07-13 08:48:13 - Row 5: Managed Account uygulamaları: ['WINSCP', 'TOAD']
+2025-07-13 08:48:13 - Row 5: AD Managed Account 'pam118065' zaten mevcut. Atlandı.
+2025-07-13 08:48:14 - Row 5: AD hesabı 'pam118065' → IP 192.168.10.34 sistemine başarıyla linklendi.
+2025-07-13 08:48:14 - Row 5: SmartRule 'THY_MA_pam118065' zaten mevcut. Atlandı.
+2025-07-13 08:48:14 - Row 5: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-13 08:48:14 - Row 5: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-13 08:48:14 - Row 5: ensure_user_groups_and_assign_smartrule fonksiyonu çağrıldı, user sayısı: 1
+2025-07-13 08:48:14 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:14 - UserGroups listesi başarıyla alındı.
+2025-07-13 08:48:14 - Row 5: İşlem yapılan user/group: S_OZCAN
+2025-07-13 08:48:14 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:14 - SmartRules listesi başarıyla alındı.
+2025-07-13 08:48:14 - SmartRule bulundu: THY_MA_pam118065 (ID: 10018)
+2025-07-13 08:48:14 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:15 - Row 5: SmartRule (ID: 10018) başarıyla UserGroup (ID: 27)'a yetkilendirildi.
+2025-07-13 08:48:25 - Row 6: IP çözümlenemediği için işlem atlandı.
+2025-07-13 08:48:25 - Row 7: İşlem başlatıldı → Account='trax_projects', System='bt.quasys.local', App='SQL DEV', Users='S_OZCAN,Y_UCUNCUOGLU', Port='1521.0', DB='teknik2'
+2025-07-13 08:48:25 - Row 7: Managed System tipleri: []
+2025-07-13 08:48:25 - Row 7: Managed Account uygulamaları: ['SQL DEV']
+2025-07-13 08:48:25 - Row 7: ensure_user_groups_and_assign_smartrule fonksiyonu çağrıldı, user sayısı: 2
+2025-07-13 08:48:25 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:25 - UserGroups listesi başarıyla alındı.
+2025-07-13 08:48:25 - Row 7: İşlem yapılan user/group: S_OZCAN
+2025-07-13 08:48:25 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:25 - SmartRules listesi başarıyla alındı.
+2025-07-13 08:48:25 - SmartRule bulunamadı: THY_MA_trax_projects_192.168.10.20
+2025-07-13 08:48:25 - Row 7: SmartRule bulunamadı, atlama: trax_projects
+2025-07-13 08:48:25 - Row 7: İşlem yapılan user/group: Y_UCUNCUOGLU
+2025-07-13 08:48:25 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:25 - SmartRules listesi başarıyla alındı.
+2025-07-13 08:48:25 - SmartRule bulunamadı: THY_MA_trax_projects_192.168.10.20
+2025-07-13 08:48:25 - Row 7: SmartRule bulunamadı, atlama: trax_projects
+2025-07-13 08:48:25 - Row 8: İşlem başlatıldı → Account='trax_projects', System='192.168.10.37', App='DBAVER', Users='S_OZCAN,Y_UCUNCUOGLU', Port='1521.0', DB='teknik2'
+2025-07-13 08:48:25 - Row 8: Managed System tipleri: []
+2025-07-13 08:48:25 - Row 8: Managed Account uygulamaları: ['DBAVER']
+2025-07-13 08:48:26 - Row 8: ensure_user_groups_and_assign_smartrule fonksiyonu çağrıldı, user sayısı: 2
+2025-07-13 08:48:26 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:26 - UserGroups listesi başarıyla alındı.
+2025-07-13 08:48:26 - Row 8: İşlem yapılan user/group: S_OZCAN
+2025-07-13 08:48:26 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:26 - SmartRules listesi başarıyla alındı.
+2025-07-13 08:48:26 - SmartRule bulunamadı: THY_MA_trax_projects_192.168.10.37
+2025-07-13 08:48:26 - Row 8: SmartRule bulunamadı, atlama: trax_projects
+2025-07-13 08:48:26 - Row 8: İşlem yapılan user/group: Y_UCUNCUOGLU
+2025-07-13 08:48:26 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:26 - SmartRules listesi başarıyla alındı.
+2025-07-13 08:48:26 - SmartRule bulunamadı: THY_MA_trax_projects_192.168.10.37
+2025-07-13 08:48:26 - Row 8: SmartRule bulunamadı, atlama: trax_projects
+2025-07-13 08:48:26 - Row 9: İşlem başlatıldı → Account='root', System='standby2.quasys.local', App='SSH, WINSCP', Users='A_OZKAL,S_OZCAN,Y_UCUNCUOGLU', Port='nan', DB='nan'
+2025-07-13 08:48:26 - Row 9: Managed System tipleri: ['SSH']
+2025-07-13 08:48:26 - Row 9: Managed Account uygulamaları: ['WINSCP']
+2025-07-13 08:48:26 - Row 9: IP 192.168.10.34 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-13 08:48:26 - Row 9: Local Managed Account 'root' zaten mevcut. Atlandı.
+2025-07-13 08:48:27 - Row 9: SmartRule 'THY_MA_root_192.168.10.34' zaten mevcut. Atlandı.
+2025-07-13 08:48:27 - Row 9: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-13 08:48:27 - Row 9: ensure_user_groups_and_assign_smartrule fonksiyonu çağrıldı, user sayısı: 3
+2025-07-13 08:48:27 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:27 - UserGroups listesi başarıyla alındı.
+2025-07-13 08:48:27 - Row 9: İşlem yapılan user/group: A_OZKAL
+2025-07-13 08:48:27 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:27 - SmartRules listesi başarıyla alındı.
+2025-07-13 08:48:27 - SmartRule bulundu: THY_MA_root_192.168.10.34 (ID: 10019)
+2025-07-13 08:48:27 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:27 - Row 9: SmartRule (ID: 10019) başarıyla UserGroup (ID: 29)'a yetkilendirildi.
+2025-07-13 08:48:27 - Row 9: İşlem yapılan user/group: S_OZCAN
+2025-07-13 08:48:27 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:27 - SmartRules listesi başarıyla alındı.
+2025-07-13 08:48:27 - SmartRule bulundu: THY_MA_root_192.168.10.34 (ID: 10019)
+2025-07-13 08:48:27 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:27 - Row 9: SmartRule (ID: 10019) başarıyla UserGroup (ID: 27)'a yetkilendirildi.
+2025-07-13 08:48:27 - Row 9: İşlem yapılan user/group: Y_UCUNCUOGLU
+2025-07-13 08:48:27 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:27 - SmartRules listesi başarıyla alındı.
+2025-07-13 08:48:27 - SmartRule bulundu: THY_MA_root_192.168.10.34 (ID: 10019)
+2025-07-13 08:48:27 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:28 - Row 9: SmartRule (ID: 10019) başarıyla UserGroup (ID: 28)'a yetkilendirildi.
+2025-07-13 08:48:28 - Row 10: İşlem başlatıldı → Account='administrator', System='sinav.quasys.local', App='RDP', Users='A_OZKAL,S_OZCAN,Y_UCUNCUOGLU', Port='nan', DB='nan'
+2025-07-13 08:48:28 - Row 10: Managed System tipleri: ['RDP']
+2025-07-13 08:48:28 - Row 10: Managed Account uygulamaları: []
+2025-07-13 08:48:28 - Row 10: IP 192.168.10.125 zaten managed system olarak mevcut. Atlandı.
+2025-07-13 08:48:28 - Row 10: Local Managed Account 'administrator' zaten mevcut. Atlandı.
+2025-07-13 08:48:28 - Row 10: SmartRule 'THY_MA_administrator_192.168.10.125' zaten mevcut. Atlandı.
+2025-07-13 08:48:28 - Row 10: ensure_user_groups_and_assign_smartrule fonksiyonu çağrıldı, user sayısı: 3
+2025-07-13 08:48:28 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:28 - UserGroups listesi başarıyla alındı.
+2025-07-13 08:48:28 - Row 10: İşlem yapılan user/group: A_OZKAL
+2025-07-13 08:48:28 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:28 - SmartRules listesi başarıyla alındı.
+2025-07-13 08:48:28 - SmartRule bulundu: THY_MA_administrator_192.168.10.125 (ID: 10021)
+2025-07-13 08:48:28 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:29 - Row 10: SmartRule (ID: 10021) başarıyla UserGroup (ID: 29)'a yetkilendirildi.
+2025-07-13 08:48:29 - Row 10: İşlem yapılan user/group: S_OZCAN
+2025-07-13 08:48:29 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:29 - SmartRules listesi başarıyla alındı.
+2025-07-13 08:48:29 - SmartRule bulundu: THY_MA_administrator_192.168.10.125 (ID: 10021)
+2025-07-13 08:48:29 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:29 - Row 10: SmartRule (ID: 10021) başarıyla UserGroup (ID: 27)'a yetkilendirildi.
+2025-07-13 08:48:29 - Row 10: İşlem yapılan user/group: Y_UCUNCUOGLU
+2025-07-13 08:48:29 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:29 - SmartRules listesi başarıyla alındı.
+2025-07-13 08:48:29 - SmartRule bulundu: THY_MA_administrator_192.168.10.125 (ID: 10021)
+2025-07-13 08:48:29 - Session ID bulundu: mo2b2pyn...
+2025-07-13 08:48:29 - Row 10: SmartRule (ID: 10021) başarıyla UserGroup (ID: 28)'a yetkilendirildi.

@@ -10,7 +10,7 @@ from api.managed_account import (
     ensure_local_managed_account
 )
 from api.applications import assign_apps_to_account
-from api.user_groups import ensure_user_groups
+from api.user_groups import ensure_user_groups_and_assign_smartrule
 
 def process_row(row_index: int, row: dict):
     target_user = row.get('Target system user name')
@@ -83,8 +83,7 @@ def process_row(row_index: int, row: dict):
     # User Group işlemleri (sadece varsa)
     if users:
         users_list = [u.strip() for u in users.split(",") if u.strip()]
-        ensure_user_groups(users_list, row_index)
-
+        ensure_user_groups_and_assign_smartrule(users_list, target_user, row_index, ip_address=target_ip)
 def process_all_rows():
     df = read_excel_data(EXCEL_FILE_PATH)
     for index, row in df.iterrows():
