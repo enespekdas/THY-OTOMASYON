@@ -7,12 +7,15 @@ RUNAS_USER = "btadmin"
 EXCEL_FILE_PATH = "excel/data.xlsx"
 WORKGROUP_ID = 2  # Beyondtrust Workgroup
 DOMAIN_MANAGED_SYSTEM_ID = 2  # Domain'e ait managed system ID
-DOMAIN_NAME = "quasys.local"
 DEFAULT_AD_PASSWORD = "Qqweqwe"
 SMART_RULE_PREFIX = "THY_MA"
 LOCAL_GROUP_PERMISSION="[{ PermissionID: 52, AccessLevelID: 1 },	{ PermissionID: 76, AccessLevelID: 3 },	{ PermissionID: 77, AccessLevelID: 1 }]"
 ACCESS_POLICY_ID="5000"
 TEST_TAG = "btps-auto"
+BIND_PASSWORD = "CyberArk123!"
+BIND_USER = "admin"
+FOREST_NAME = "quasys.local"
+DOMAIN_NAME = "quasys.local"
 
 # Windows Managed System create template
 WINDOWS_MANAGED_SYSTEM_TEMPLATE = {
