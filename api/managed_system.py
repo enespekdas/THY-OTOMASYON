@@ -1,5 +1,7 @@
 import os
 import requests
+import jmespath
+from functools import lru_cache
 from config.settings import (
     API_URL,
     WINDOWS_MANAGED_SYSTEM_TEMPLATE,
@@ -9,6 +11,7 @@ from config.settings import (
 from utils.logger import log_message, log_error
 
 
+@lru_cache(maxsize=1)
 def get_all_managed_systems():
     session_id = os.getenv("ASP_NET_SESSION_ID")
     if not session_id:
@@ -32,6 +35,12 @@ def get_all_managed_systems():
         return []
 
 
+def _find_managed_system_by_ip(systems, target_ip):
+    # jmespath ile IP eşleşen kaydı buluyoruz, boş liste dönerse None olur
+    expression = jmespath.compile(f"[?IPAddress == '{target_ip}'] | [0]")
+    return expression.search(systems)
+
+
 def create_managed_system_rdp(target_ip: str, target_dns: str, target_user: str, row_index: int):
     session_id = os.getenv("ASP_NET_SESSION_ID")
     if not session_id:
@@ -53,6 +62,8 @@ def create_managed_system_rdp(target_ip: str, target_dns: str, target_user: str,
         response = requests.post(url, json=payload, headers=headers, verify=False)
         if response.status_code == 201:
             log_message(f"Row {row_index + 2}. için RDP Managed System başarıyla oluşturuldu.")
+            # Cache'i temizle ki yeni sistem görünsün
+            get_all_managed_systems.cache_clear()
         else:
             log_error(f"Row {row_index + 2}. Managed System oluşturulamadı: {response.status_code} - {response.text}")
     except Exception as e:
@@ -63,10 +74,7 @@ def ensure_managed_system_rdp(target_ip: str, target_dns: str, target_user: str,
     systems = get_all_managed_systems()
     normalized_target_ip = target_ip.strip() if target_ip else ""
 
-    match = next(
-        (s for s in systems if str(s.get("IPAddress", "")).strip() == normalized_target_ip),
-        None
-    )
+    match = _find_managed_system_by_ip(systems, normalized_target_ip)
 
     if match:
         log_message(f"Row {row_index + 2}: IP {normalized_target_ip} zaten managed system olarak mevcut. Atlandı.")
@@ -99,6 +107,7 @@ def create_managed_system_ssh(target_ip: str, target_dns: str, row_index: int):
         response = requests.post(url, json=payload, headers=headers, verify=False)
         if response.status_code == 201:
             log_message(f"Row {row_index + 2}: SSH Managed System başarıyla oluşturuldu.")
+            get_all_managed_systems.cache_clear()
         else:
             log_error(f"Row {row_index + 2}: SSH Managed System oluşturulamadı: {response.status_code} - {response.text}")
     except Exception as e:
@@ -109,10 +118,7 @@ def ensure_managed_system_ssh(target_ip: str, target_dns: str, row_index: int):
     systems = get_all_managed_systems()
     normalized_target_ip = target_ip.strip() if target_ip else ""
 
-    match = next(
-        (s for s in systems if str(s.get("IPAddress", "")).strip() == normalized_target_ip),
-        None
-    )
+    match = _find_managed_system_by_ip(systems, normalized_target_ip)
 
     if match:
         log_message(f"Row {row_index + 2}: IP {normalized_target_ip} zaten SSH managed system olarak mevcut. Atlandı.")

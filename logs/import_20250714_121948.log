@@ -1,0 +1,600 @@
+2025-07-14 12:19:49 - Row 2: İşlem başlatıldı → Account='local_lin2', System='10.11.0.1', App='SSH,TOAD', Users='Q_TEST5', Port='nan', DB='nan'
+2025-07-14 12:19:49 - Row 2: Managed System tipleri: ['SSH']
+2025-07-14 12:19:49 - Row 2: Managed Account uygulamaları: ['TOAD']
+2025-07-14 12:19:50 - Row 2: IP 10.11.0.1 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:19:50 - Row 2: Local Managed Account 'local_lin2' zaten mevcut. Atlandı.
+2025-07-14 12:19:53 - Row 2: SmartRule 'THY_MA_local_lin2_10.11.0.1' zaten mevcut. Atlandı.
+2025-07-14 12:19:54 - Row 2: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:19:57 - Row 2: SmartRule (ID: 14163) başarıyla group'a atandı.
+2025-07-14 12:19:58 - Row 2: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:19:58 - Row 2: Kullanıcı 'Q_TEST5' başarıyla gruba eklendi (GroupID: 39).
+2025-07-14 12:19:58 - Row 3: İşlem başlatıldı → Account='local_lin1', System='10.11.0.2', App='SSH,WINSCP', Users='Q_TEST2', Port='nan', DB='nan'
+2025-07-14 12:19:58 - Row 3: Managed System tipleri: ['SSH']
+2025-07-14 12:19:58 - Row 3: Managed Account uygulamaları: ['WINSCP']
+2025-07-14 12:19:58 - Row 3: IP 10.11.0.2 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:19:59 - Row 3: Local Managed Account 'local_lin1' zaten mevcut. Atlandı.
+2025-07-14 12:19:59 - Row 3: SmartRule 'THY_MA_local_lin1_10.11.0.2' zaten mevcut. Atlandı.
+2025-07-14 12:19:59 - Row 3: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:19:59 - Row 3: SmartRule (ID: 14165) başarıyla group'a atandı.
+2025-07-14 12:19:59 - Row 3: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:19:59 - Row 3: Kullanıcı 'Q_TEST2' başarıyla gruba eklendi (GroupID: 41).
+2025-07-14 12:19:59 - Row 4: İşlem başlatıldı → Account='local_lin2', System='10.11.0.3', App='SSH,WINSCP,MSSQL,TOAD', Users='Q_TEST1', Port='nan', DB='nan'
+2025-07-14 12:19:59 - Row 4: Managed System tipleri: ['SSH']
+2025-07-14 12:19:59 - Row 4: Managed Account uygulamaları: ['WINSCP', 'MSSQL', 'TOAD']
+2025-07-14 12:19:59 - Row 4: IP 10.11.0.3 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:00 - Row 4: Local Managed Account 'local_lin2' zaten mevcut. Atlandı.
+2025-07-14 12:20:00 - Row 4: SmartRule 'THY_MA_local_lin2_10.11.0.3' zaten mevcut. Atlandı.
+2025-07-14 12:20:01 - Row 4: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:01 - Row 4: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:01 - Row 4: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:01 - Row 4: SmartRule (ID: 14170) başarıyla group'a atandı.
+2025-07-14 12:20:01 - Row 4: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:01 - Row 4: Kullanıcı 'Q_TEST1' başarıyla gruba eklendi (GroupID: 35).
+2025-07-14 12:20:01 - Row 5: İşlem başlatıldı → Account='root', System='10.11.0.4', App='SSH,TOAD,MSSQL', Users='Q_TEST3', Port='nan', DB='nan'
+2025-07-14 12:20:01 - Row 5: Managed System tipleri: ['SSH']
+2025-07-14 12:20:01 - Row 5: Managed Account uygulamaları: ['TOAD', 'MSSQL']
+2025-07-14 12:20:01 - Row 5: IP 10.11.0.4 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:01 - Row 5: Local Managed Account 'root' zaten mevcut. Atlandı.
+2025-07-14 12:20:01 - Row 5: SmartRule 'THY_MA_root_10.11.0.4' zaten mevcut. Atlandı.
+2025-07-14 12:20:01 - Row 5: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:01 - Row 5: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:02 - Row 5: SmartRule (ID: 14172) başarıyla group'a atandı.
+2025-07-14 12:20:02 - Row 5: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:03 - Row 5: Kullanıcı 'Q_TEST3' başarıyla gruba eklendi (GroupID: 33).
+2025-07-14 12:20:03 - Row 6: İşlem başlatıldı → Account='local_lin1', System='10.11.0.5', App='SSH,TOAD,WINSCP,MSSQL', Users='Q_TEST5', Port='nan', DB='nan'
+2025-07-14 12:20:03 - Row 6: Managed System tipleri: ['SSH']
+2025-07-14 12:20:03 - Row 6: Managed Account uygulamaları: ['TOAD', 'WINSCP', 'MSSQL']
+2025-07-14 12:20:03 - Row 6: IP 10.11.0.5 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:03 - Row 6: Local Managed Account 'local_lin1' zaten mevcut. Atlandı.
+2025-07-14 12:20:03 - Row 6: SmartRule 'THY_MA_local_lin1_10.11.0.5' zaten mevcut. Atlandı.
+2025-07-14 12:20:03 - Row 6: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:03 - Row 6: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:03 - Row 6: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:04 - Row 6: SmartRule (ID: 14175) başarıyla group'a atandı.
+2025-07-14 12:20:04 - Row 6: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:04 - Row 6: Kullanıcı 'Q_TEST5' başarıyla gruba eklendi (GroupID: 39).
+2025-07-14 12:20:04 - Row 7: İşlem başlatıldı → Account='root', System='10.11.0.6', App='SSH,TOAD,MSSQL', Users='Q_TEST8', Port='nan', DB='nan'
+2025-07-14 12:20:04 - Row 7: Managed System tipleri: ['SSH']
+2025-07-14 12:20:04 - Row 7: Managed Account uygulamaları: ['TOAD', 'MSSQL']
+2025-07-14 12:20:04 - Row 7: IP 10.11.0.6 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:04 - Row 7: Local Managed Account 'root' zaten mevcut. Atlandı.
+2025-07-14 12:20:04 - Row 7: SmartRule 'THY_MA_root_10.11.0.6' zaten mevcut. Atlandı.
+2025-07-14 12:20:04 - Row 7: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:04 - Row 7: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:04 - Row 7: SmartRule (ID: 14177) başarıyla group'a atandı.
+2025-07-14 12:20:04 - Row 7: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:04 - Row 7: Kullanıcı 'Q_TEST8' başarıyla gruba eklendi (GroupID: 36).
+2025-07-14 12:20:04 - Row 8: İşlem başlatıldı → Account='root', System='10.11.0.7', App='SSH,WINSCP,TOAD,MSSQL', Users='Q_TEST8', Port='nan', DB='nan'
+2025-07-14 12:20:04 - Row 8: Managed System tipleri: ['SSH']
+2025-07-14 12:20:04 - Row 8: Managed Account uygulamaları: ['WINSCP', 'TOAD', 'MSSQL']
+2025-07-14 12:20:04 - Row 8: IP 10.11.0.7 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:04 - Row 8: Local Managed Account 'root' zaten mevcut. Atlandı.
+2025-07-14 12:20:04 - Row 8: SmartRule 'THY_MA_root_10.11.0.7' zaten mevcut. Atlandı.
+2025-07-14 12:20:04 - Row 8: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:04 - Row 8: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:05 - Row 8: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:05 - Row 8: SmartRule (ID: 14178) başarıyla group'a atandı.
+2025-07-14 12:20:05 - Row 8: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:05 - Row 8: Kullanıcı 'Q_TEST8' başarıyla gruba eklendi (GroupID: 36).
+2025-07-14 12:20:05 - Row 9: İşlem başlatıldı → Account='local_lin1', System='10.11.0.8', App='SSH,MSSQL', Users='Q_TEST3', Port='nan', DB='nan'
+2025-07-14 12:20:05 - Row 9: Managed System tipleri: ['SSH']
+2025-07-14 12:20:05 - Row 9: Managed Account uygulamaları: ['MSSQL']
+2025-07-14 12:20:05 - Row 9: IP 10.11.0.8 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:05 - Row 9: Local Managed Account 'local_lin1' zaten mevcut. Atlandı.
+2025-07-14 12:20:05 - Row 9: SmartRule 'THY_MA_local_lin1_10.11.0.8' zaten mevcut. Atlandı.
+2025-07-14 12:20:05 - Row 9: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:05 - Row 9: SmartRule (ID: 14180) başarıyla group'a atandı.
+2025-07-14 12:20:06 - Row 9: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:06 - Row 9: Kullanıcı 'Q_TEST3' başarıyla gruba eklendi (GroupID: 33).
+2025-07-14 12:20:06 - Row 10: İşlem başlatıldı → Account='pam11162', System='10.11.0.9', App='SSH,TOAD,MSSQL', Users='Q_TEST7,Q_TEST2', Port='nan', DB='nan'
+2025-07-14 12:20:06 - Row 10: Managed System tipleri: ['SSH']
+2025-07-14 12:20:06 - Row 10: Managed Account uygulamaları: ['TOAD', 'MSSQL']
+2025-07-14 12:20:06 - Row 10: IP 10.11.0.9 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:07 - Row 10: AD Managed Account 'pam11162' zaten mevcut. Atlandı.
+2025-07-14 12:20:07 - Row 10: AD hesabı 'pam11162' → IP 10.11.0.9 sistemine başarıyla linklendi.
+2025-07-14 12:20:07 - Row 10: SmartRule 'THY_MA_pam11162' zaten mevcut. Atlandı.
+2025-07-14 12:20:07 - Row 10: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:07 - Row 10: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:07 - Row 10: SmartRule (ID: 11575) başarıyla group'a atandı.
+2025-07-14 12:20:07 - Row 10: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:07 - Row 10: Kullanıcı 'Q_TEST7' başarıyla gruba eklendi (GroupID: 37).
+2025-07-14 12:20:07 - Row 10: SmartRule (ID: 11575) başarıyla group'a atandı.
+2025-07-14 12:20:07 - Row 10: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:07 - Row 10: Kullanıcı 'Q_TEST2' başarıyla gruba eklendi (GroupID: 41).
+2025-07-14 12:20:07 - Row 11: İşlem başlatıldı → Account='pam11163', System='10.11.0.10', App='SSH,MSSQL', Users='Q_TEST4', Port='nan', DB='nan'
+2025-07-14 12:20:07 - Row 11: Managed System tipleri: ['SSH']
+2025-07-14 12:20:07 - Row 11: Managed Account uygulamaları: ['MSSQL']
+2025-07-14 12:20:07 - Row 11: IP 10.11.0.10 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:07 - Row 11: AD Managed Account 'pam11163' zaten mevcut. Atlandı.
+2025-07-14 12:20:07 - Row 11: AD hesabı 'pam11163' → IP 10.11.0.10 sistemine başarıyla linklendi.
+2025-07-14 12:20:07 - Row 11: SmartRule 'THY_MA_pam11163' zaten mevcut. Atlandı.
+2025-07-14 12:20:07 - Row 11: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:08 - Row 11: SmartRule (ID: 11576) başarıyla group'a atandı.
+2025-07-14 12:20:08 - Row 11: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:08 - Row 11: Kullanıcı 'Q_TEST4' başarıyla gruba eklendi (GroupID: 34).
+2025-07-14 12:20:08 - Row 12: İşlem başlatıldı → Account='pam11164', System='10.11.0.11', App='SSH,WINSCP,MSSQL', Users='Q_TEST6', Port='nan', DB='nan'
+2025-07-14 12:20:08 - Row 12: Managed System tipleri: ['SSH']
+2025-07-14 12:20:08 - Row 12: Managed Account uygulamaları: ['WINSCP', 'MSSQL']
+2025-07-14 12:20:08 - Row 12: IP 10.11.0.11 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:08 - Row 12: AD Managed Account 'pam11164' zaten mevcut. Atlandı.
+2025-07-14 12:20:08 - Row 12: AD hesabı 'pam11164' → IP 10.11.0.11 sistemine başarıyla linklendi.
+2025-07-14 12:20:08 - Row 12: SmartRule 'THY_MA_pam11164' zaten mevcut. Atlandı.
+2025-07-14 12:20:08 - Row 12: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:08 - Row 12: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:08 - Row 12: SmartRule (ID: 11579) başarıyla group'a atandı.
+2025-07-14 12:20:08 - Row 12: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:08 - Row 12: Kullanıcı 'Q_TEST6' başarıyla gruba eklendi (GroupID: 38).
+2025-07-14 12:20:08 - Row 13: İşlem başlatıldı → Account='pam11165', System='10.11.0.12', App='SSH,TOAD,MSSQL', Users='Q_TEST9', Port='nan', DB='nan'
+2025-07-14 12:20:08 - Row 13: Managed System tipleri: ['SSH']
+2025-07-14 12:20:08 - Row 13: Managed Account uygulamaları: ['TOAD', 'MSSQL']
+2025-07-14 12:20:08 - Row 13: IP 10.11.0.12 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:08 - Row 13: AD Managed Account 'pam11165' zaten mevcut. Atlandı.
+2025-07-14 12:20:08 - Row 13: AD hesabı 'pam11165' → IP 10.11.0.12 sistemine başarıyla linklendi.
+2025-07-14 12:20:08 - Row 13: SmartRule 'THY_MA_pam11165' zaten mevcut. Atlandı.
+2025-07-14 12:20:08 - Row 13: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:09 - Row 13: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:09 - Row 13: SmartRule (ID: 11581) başarıyla group'a atandı.
+2025-07-14 12:20:09 - Row 13: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:09 - Row 13: Kullanıcı 'Q_TEST9' başarıyla gruba eklendi (GroupID: 40).
+2025-07-14 12:20:09 - Row 14: İşlem başlatıldı → Account='pam11166', System='10.11.0.13', App='SSH,WINSCP', Users='Q_TEST7', Port='nan', DB='nan'
+2025-07-14 12:20:09 - Row 14: Managed System tipleri: ['SSH']
+2025-07-14 12:20:09 - Row 14: Managed Account uygulamaları: ['WINSCP']
+2025-07-14 12:20:09 - Row 14: IP 10.11.0.13 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:09 - Row 14: AD Managed Account 'pam11166' zaten mevcut. Atlandı.
+2025-07-14 12:20:09 - Row 14: AD hesabı 'pam11166' → IP 10.11.0.13 sistemine başarıyla linklendi.
+2025-07-14 12:20:09 - Row 14: SmartRule 'THY_MA_pam11166' zaten mevcut. Atlandı.
+2025-07-14 12:20:09 - Row 14: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:09 - Row 14: SmartRule (ID: 11584) başarıyla group'a atandı.
+2025-07-14 12:20:09 - Row 14: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:10 - Row 14: Kullanıcı 'Q_TEST7' başarıyla gruba eklendi (GroupID: 37).
+2025-07-14 12:20:10 - Row 15: İşlem başlatıldı → Account='pam11167', System='10.11.0.14', App='SSH', Users='Q_TEST6', Port='nan', DB='nan'
+2025-07-14 12:20:10 - Row 15: Managed System tipleri: ['SSH']
+2025-07-14 12:20:10 - Row 15: Managed Account uygulamaları: []
+2025-07-14 12:20:10 - Row 15: IP 10.11.0.14 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:10 - Row 15: AD Managed Account 'pam11167' zaten mevcut. Atlandı.
+2025-07-14 12:20:10 - Row 15: AD hesabı 'pam11167' → IP 10.11.0.14 sistemine başarıyla linklendi.
+2025-07-14 12:20:10 - Row 15: SmartRule 'THY_MA_pam11167' zaten mevcut. Atlandı.
+2025-07-14 12:20:10 - Row 15: SmartRule (ID: 11585) başarıyla group'a atandı.
+2025-07-14 12:20:10 - Row 15: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:10 - Row 15: Kullanıcı 'Q_TEST6' başarıyla gruba eklendi (GroupID: 38).
+2025-07-14 12:20:10 - Row 16: İşlem başlatıldı → Account='pam11168', System='10.11.0.15', App='SSH,WINSCP,TOAD', Users='Q_TEST9', Port='nan', DB='nan'
+2025-07-14 12:20:10 - Row 16: Managed System tipleri: ['SSH']
+2025-07-14 12:20:10 - Row 16: Managed Account uygulamaları: ['WINSCP', 'TOAD']
+2025-07-14 12:20:10 - Row 16: IP 10.11.0.15 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:10 - Row 16: AD Managed Account 'pam11168' zaten mevcut. Atlandı.
+2025-07-14 12:20:10 - Row 16: AD hesabı 'pam11168' → IP 10.11.0.15 sistemine başarıyla linklendi.
+2025-07-14 12:20:10 - Row 16: SmartRule 'THY_MA_pam11168' zaten mevcut. Atlandı.
+2025-07-14 12:20:10 - Row 16: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:10 - Row 16: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:11 - Row 16: SmartRule (ID: 11588) başarıyla group'a atandı.
+2025-07-14 12:20:11 - Row 16: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:11 - Row 16: Kullanıcı 'Q_TEST9' başarıyla gruba eklendi (GroupID: 40).
+2025-07-14 12:20:11 - Row 17: İşlem başlatıldı → Account='pam11169', System='10.11.0.16', App='SSH,TOAD,WINSCP', Users='Q_TEST4', Port='nan', DB='nan'
+2025-07-14 12:20:11 - Row 17: Managed System tipleri: ['SSH']
+2025-07-14 12:20:11 - Row 17: Managed Account uygulamaları: ['TOAD', 'WINSCP']
+2025-07-14 12:20:11 - Row 17: IP 10.11.0.16 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:11 - Row 17: AD Managed Account 'pam11169' zaten mevcut. Atlandı.
+2025-07-14 12:20:11 - Row 17: AD hesabı 'pam11169' → IP 10.11.0.16 sistemine başarıyla linklendi.
+2025-07-14 12:20:11 - Row 17: SmartRule 'THY_MA_pam11169' zaten mevcut. Atlandı.
+2025-07-14 12:20:11 - Row 17: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:11 - Row 17: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:11 - Row 17: SmartRule (ID: 11590) başarıyla group'a atandı.
+2025-07-14 12:20:11 - Row 17: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:11 - Row 17: Kullanıcı 'Q_TEST4' başarıyla gruba eklendi (GroupID: 34).
+2025-07-14 12:20:11 - Row 18: İşlem başlatıldı → Account='pam11170', System='10.11.0.17', App='SSH,MSSQL,WINSCP', Users='Q_TEST9', Port='nan', DB='nan'
+2025-07-14 12:20:11 - Row 18: Managed System tipleri: ['SSH']
+2025-07-14 12:20:11 - Row 18: Managed Account uygulamaları: ['MSSQL', 'WINSCP']
+2025-07-14 12:20:11 - Row 18: IP 10.11.0.17 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:11 - Row 18: AD Managed Account 'pam11170' zaten mevcut. Atlandı.
+2025-07-14 12:20:11 - Row 18: AD hesabı 'pam11170' → IP 10.11.0.17 sistemine başarıyla linklendi.
+2025-07-14 12:20:11 - Row 18: SmartRule 'THY_MA_pam11170' zaten mevcut. Atlandı.
+2025-07-14 12:20:11 - Row 18: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:11 - Row 18: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:11 - Row 18: SmartRule (ID: 11592) başarıyla group'a atandı.
+2025-07-14 12:20:12 - Row 18: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:13 - Row 18: Kullanıcı 'Q_TEST9' başarıyla gruba eklendi (GroupID: 40).
+2025-07-14 12:20:13 - Row 19: İşlem başlatıldı → Account='pam11171', System='10.11.0.18', App='SSH', Users='Q_TEST8', Port='nan', DB='nan'
+2025-07-14 12:20:13 - Row 19: Managed System tipleri: ['SSH']
+2025-07-14 12:20:13 - Row 19: Managed Account uygulamaları: []
+2025-07-14 12:20:13 - Row 19: IP 10.11.0.18 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:13 - Row 19: AD Managed Account 'pam11171' zaten mevcut. Atlandı.
+2025-07-14 12:20:13 - Row 19: AD hesabı 'pam11171' → IP 10.11.0.18 sistemine başarıyla linklendi.
+2025-07-14 12:20:13 - Row 19: SmartRule 'THY_MA_pam11171' zaten mevcut. Atlandı.
+2025-07-14 12:20:13 - Row 19: SmartRule (ID: 11595) başarıyla group'a atandı.
+2025-07-14 12:20:13 - Row 19: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:13 - Row 19: Kullanıcı 'Q_TEST8' başarıyla gruba eklendi (GroupID: 36).
+2025-07-14 12:20:13 - Row 20: İşlem başlatıldı → Account='pam11172', System='10.11.0.19', App='SSH', Users='Q_TEST5', Port='nan', DB='nan'
+2025-07-14 12:20:13 - Row 20: Managed System tipleri: ['SSH']
+2025-07-14 12:20:13 - Row 20: Managed Account uygulamaları: []
+2025-07-14 12:20:13 - Row 20: IP 10.11.0.19 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:13 - Row 20: AD Managed Account 'pam11172' zaten mevcut. Atlandı.
+2025-07-14 12:20:13 - Row 20: AD hesabı 'pam11172' → IP 10.11.0.19 sistemine başarıyla linklendi.
+2025-07-14 12:20:13 - Row 20: SmartRule 'THY_MA_pam11172' zaten mevcut. Atlandı.
+2025-07-14 12:20:13 - Row 20: SmartRule (ID: 11598) başarıyla group'a atandı.
+2025-07-14 12:20:13 - Row 20: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:14 - Row 20: Kullanıcı 'Q_TEST5' başarıyla gruba eklendi (GroupID: 39).
+2025-07-14 12:20:14 - Row 21: İşlem başlatıldı → Account='pam11173', System='10.11.0.20', App='SSH,TOAD,MSSQL', Users='Q_TEST1', Port='nan', DB='nan'
+2025-07-14 12:20:14 - Row 21: Managed System tipleri: ['SSH']
+2025-07-14 12:20:14 - Row 21: Managed Account uygulamaları: ['TOAD', 'MSSQL']
+2025-07-14 12:20:14 - Row 21: IP 10.11.0.20 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:14 - Row 21: AD Managed Account 'pam11173' zaten mevcut. Atlandı.
+2025-07-14 12:20:14 - Row 21: AD hesabı 'pam11173' → IP 10.11.0.20 sistemine başarıyla linklendi.
+2025-07-14 12:20:14 - Row 21: SmartRule 'THY_MA_pam11173' zaten mevcut. Atlandı.
+2025-07-14 12:20:14 - Row 21: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:14 - Row 21: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:15 - Row 21: SmartRule (ID: 11609) başarıyla group'a atandı.
+2025-07-14 12:20:15 - Row 21: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:15 - Row 21: Kullanıcı 'Q_TEST1' başarıyla gruba eklendi (GroupID: 35).
+2025-07-14 12:20:15 - Row 22: İşlem başlatıldı → Account='pam11174', System='10.11.0.21', App='SSH', Users='Q_TEST4', Port='nan', DB='nan'
+2025-07-14 12:20:15 - Row 22: Managed System tipleri: ['SSH']
+2025-07-14 12:20:15 - Row 22: Managed Account uygulamaları: []
+2025-07-14 12:20:15 - Row 22: IP 10.11.0.21 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:15 - Row 22: AD Managed Account 'pam11174' zaten mevcut. Atlandı.
+2025-07-14 12:20:15 - Row 22: AD hesabı 'pam11174' → IP 10.11.0.21 sistemine başarıyla linklendi.
+2025-07-14 12:20:15 - Row 22: SmartRule 'THY_MA_pam11174' zaten mevcut. Atlandı.
+2025-07-14 12:20:16 - Row 22: SmartRule (ID: 11612) başarıyla group'a atandı.
+2025-07-14 12:20:16 - Row 22: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:16 - Row 22: Kullanıcı 'Q_TEST4' başarıyla gruba eklendi (GroupID: 34).
+2025-07-14 12:20:16 - Row 23: İşlem başlatıldı → Account='pam11175', System='10.11.0.22', App='SSH,TOAD,WINSCP,MSSQL', Users='Q_TEST7', Port='nan', DB='nan'
+2025-07-14 12:20:16 - Row 23: Managed System tipleri: ['SSH']
+2025-07-14 12:20:16 - Row 23: Managed Account uygulamaları: ['TOAD', 'WINSCP', 'MSSQL']
+2025-07-14 12:20:16 - Row 23: IP 10.11.0.22 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:16 - Row 23: AD Managed Account 'pam11175' zaten mevcut. Atlandı.
+2025-07-14 12:20:16 - Row 23: AD hesabı 'pam11175' → IP 10.11.0.22 sistemine başarıyla linklendi.
+2025-07-14 12:20:16 - Row 23: SmartRule 'THY_MA_pam11175' zaten mevcut. Atlandı.
+2025-07-14 12:20:16 - Row 23: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:16 - Row 23: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:16 - Row 23: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:16 - Row 23: SmartRule (ID: 11615) başarıyla group'a atandı.
+2025-07-14 12:20:16 - Row 23: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:16 - Row 23: Kullanıcı 'Q_TEST7' başarıyla gruba eklendi (GroupID: 37).
+2025-07-14 12:20:16 - Row 24: İşlem başlatıldı → Account='pam11176', System='10.11.0.23', App='SSH', Users='Q_TEST2', Port='nan', DB='nan'
+2025-07-14 12:20:16 - Row 24: Managed System tipleri: ['SSH']
+2025-07-14 12:20:16 - Row 24: Managed Account uygulamaları: []
+2025-07-14 12:20:16 - Row 24: IP 10.11.0.23 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:16 - Row 24: AD Managed Account 'pam11176' zaten mevcut. Atlandı.
+2025-07-14 12:20:17 - Row 24: AD hesabı 'pam11176' → IP 10.11.0.23 sistemine başarıyla linklendi.
+2025-07-14 12:20:17 - Row 24: SmartRule 'THY_MA_pam11176' zaten mevcut. Atlandı.
+2025-07-14 12:20:17 - Row 24: SmartRule (ID: 11618) başarıyla group'a atandı.
+2025-07-14 12:20:17 - Row 24: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:17 - Row 24: Kullanıcı 'Q_TEST2' başarıyla gruba eklendi (GroupID: 41).
+2025-07-14 12:20:17 - Row 25: İşlem başlatıldı → Account='pam11177', System='10.11.0.24', App='SSH', Users='Q_TEST9,Q_TEST6', Port='nan', DB='nan'
+2025-07-14 12:20:17 - Row 25: Managed System tipleri: ['SSH']
+2025-07-14 12:20:17 - Row 25: Managed Account uygulamaları: []
+2025-07-14 12:20:17 - Row 25: IP 10.11.0.24 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:17 - Row 25: AD Managed Account 'pam11177' zaten mevcut. Atlandı.
+2025-07-14 12:20:17 - Row 25: AD hesabı 'pam11177' → IP 10.11.0.24 sistemine başarıyla linklendi.
+2025-07-14 12:20:17 - Row 25: SmartRule 'THY_MA_pam11177' zaten mevcut. Atlandı.
+2025-07-14 12:20:17 - Row 25: SmartRule (ID: 11623) başarıyla group'a atandı.
+2025-07-14 12:20:17 - Row 25: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:17 - Row 25: Kullanıcı 'Q_TEST9' başarıyla gruba eklendi (GroupID: 40).
+2025-07-14 12:20:17 - Row 25: SmartRule (ID: 11623) başarıyla group'a atandı.
+2025-07-14 12:20:17 - Row 25: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:17 - Row 25: Kullanıcı 'Q_TEST6' başarıyla gruba eklendi (GroupID: 38).
+2025-07-14 12:20:17 - Row 26: İşlem başlatıldı → Account='pam11178', System='10.11.0.25', App='SSH', Users='Q_TEST9', Port='nan', DB='nan'
+2025-07-14 12:20:17 - Row 26: Managed System tipleri: ['SSH']
+2025-07-14 12:20:17 - Row 26: Managed Account uygulamaları: []
+2025-07-14 12:20:17 - Row 26: IP 10.11.0.25 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:17 - Row 26: AD Managed Account 'pam11178' zaten mevcut. Atlandı.
+2025-07-14 12:20:18 - Row 26: AD hesabı 'pam11178' → IP 10.11.0.25 sistemine başarıyla linklendi.
+2025-07-14 12:20:18 - Row 26: SmartRule 'THY_MA_pam11178' zaten mevcut. Atlandı.
+2025-07-14 12:20:18 - Row 26: SmartRule (ID: 11626) başarıyla group'a atandı.
+2025-07-14 12:20:18 - Row 26: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:18 - Row 26: Kullanıcı 'Q_TEST9' başarıyla gruba eklendi (GroupID: 40).
+2025-07-14 12:20:18 - Row 27: İşlem başlatıldı → Account='pam11179', System='10.11.0.26', App='SSH,TOAD', Users='Q_TEST2', Port='nan', DB='nan'
+2025-07-14 12:20:18 - Row 27: Managed System tipleri: ['SSH']
+2025-07-14 12:20:18 - Row 27: Managed Account uygulamaları: ['TOAD']
+2025-07-14 12:20:18 - Row 27: IP 10.11.0.26 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:18 - Row 27: AD Managed Account 'pam11179' zaten mevcut. Atlandı.
+2025-07-14 12:20:18 - Row 27: AD hesabı 'pam11179' → IP 10.11.0.26 sistemine başarıyla linklendi.
+2025-07-14 12:20:18 - Row 27: SmartRule 'THY_MA_pam11179' zaten mevcut. Atlandı.
+2025-07-14 12:20:18 - Row 27: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:18 - Row 27: SmartRule (ID: 11629) başarıyla group'a atandı.
+2025-07-14 12:20:18 - Row 27: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:18 - Row 27: Kullanıcı 'Q_TEST2' başarıyla gruba eklendi (GroupID: 41).
+2025-07-14 12:20:18 - Row 28: İşlem başlatıldı → Account='pam11180', System='10.11.0.27', App='SSH,MSSQL,WINSCP', Users='Q_TEST6', Port='nan', DB='nan'
+2025-07-14 12:20:18 - Row 28: Managed System tipleri: ['SSH']
+2025-07-14 12:20:18 - Row 28: Managed Account uygulamaları: ['MSSQL', 'WINSCP']
+2025-07-14 12:20:18 - Row 28: IP 10.11.0.27 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:18 - Row 28: AD Managed Account 'pam11180' zaten mevcut. Atlandı.
+2025-07-14 12:20:18 - Row 28: AD hesabı 'pam11180' → IP 10.11.0.27 sistemine başarıyla linklendi.
+2025-07-14 12:20:18 - Row 28: SmartRule 'THY_MA_pam11180' zaten mevcut. Atlandı.
+2025-07-14 12:20:18 - Row 28: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:19 - Row 28: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:19 - Row 28: SmartRule (ID: 11632) başarıyla group'a atandı.
+2025-07-14 12:20:19 - Row 28: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:19 - Row 28: Kullanıcı 'Q_TEST6' başarıyla gruba eklendi (GroupID: 38).
+2025-07-14 12:20:19 - Row 29: İşlem başlatıldı → Account='pam11181', System='10.11.0.28', App='SSH,MSSQL,TOAD,WINSCP', Users='Q_TEST5', Port='nan', DB='nan'
+2025-07-14 12:20:19 - Row 29: Managed System tipleri: ['SSH']
+2025-07-14 12:20:19 - Row 29: Managed Account uygulamaları: ['MSSQL', 'TOAD', 'WINSCP']
+2025-07-14 12:20:19 - Row 29: IP 10.11.0.28 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:19 - Row 29: AD Managed Account 'pam11181' zaten mevcut. Atlandı.
+2025-07-14 12:20:19 - Row 29: AD hesabı 'pam11181' → IP 10.11.0.28 sistemine başarıyla linklendi.
+2025-07-14 12:20:19 - Row 29: SmartRule 'THY_MA_pam11181' zaten mevcut. Atlandı.
+2025-07-14 12:20:19 - Row 29: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:19 - Row 29: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:19 - Row 29: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:19 - Row 29: SmartRule (ID: 11634) başarıyla group'a atandı.
+2025-07-14 12:20:19 - Row 29: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:20 - Row 29: Kullanıcı 'Q_TEST5' başarıyla gruba eklendi (GroupID: 39).
+2025-07-14 12:20:20 - Row 30: İşlem başlatıldı → Account='pam11182', System='10.11.0.29', App='SSH', Users='Q_TEST6', Port='nan', DB='nan'
+2025-07-14 12:20:20 - Row 30: Managed System tipleri: ['SSH']
+2025-07-14 12:20:20 - Row 30: Managed Account uygulamaları: []
+2025-07-14 12:20:20 - Row 30: IP 10.11.0.29 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:20 - Row 30: AD Managed Account 'pam11182' zaten mevcut. Atlandı.
+2025-07-14 12:20:20 - Row 30: AD hesabı 'pam11182' → IP 10.11.0.29 sistemine başarıyla linklendi.
+2025-07-14 12:20:20 - Row 30: SmartRule 'THY_MA_pam11182' zaten mevcut. Atlandı.
+2025-07-14 12:20:20 - Row 30: SmartRule (ID: 11636) başarıyla group'a atandı.
+2025-07-14 12:20:21 - Row 30: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:21 - Row 30: Kullanıcı 'Q_TEST6' başarıyla gruba eklendi (GroupID: 38).
+2025-07-14 12:20:21 - Row 31: İşlem başlatıldı → Account='pam11183', System='10.11.0.30', App='SSH', Users='Q_TEST5', Port='nan', DB='nan'
+2025-07-14 12:20:21 - Row 31: Managed System tipleri: ['SSH']
+2025-07-14 12:20:21 - Row 31: Managed Account uygulamaları: []
+2025-07-14 12:20:21 - Row 31: IP 10.11.0.30 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:21 - Row 31: AD Managed Account 'pam11183' zaten mevcut. Atlandı.
+2025-07-14 12:20:22 - Row 31: AD hesabı 'pam11183' → IP 10.11.0.30 sistemine başarıyla linklendi.
+2025-07-14 12:20:22 - Row 31: SmartRule 'THY_MA_pam11183' zaten mevcut. Atlandı.
+2025-07-14 12:20:22 - Row 31: SmartRule (ID: 11638) başarıyla group'a atandı.
+2025-07-14 12:20:22 - Row 31: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:22 - Row 31: Kullanıcı 'Q_TEST5' başarıyla gruba eklendi (GroupID: 39).
+2025-07-14 12:20:22 - Row 32: İşlem başlatıldı → Account='pam11184', System='10.11.0.31', App='SSH,TOAD,WINSCP,MSSQL', Users='Q_TEST2', Port='nan', DB='nan'
+2025-07-14 12:20:22 - Row 32: Managed System tipleri: ['SSH']
+2025-07-14 12:20:22 - Row 32: Managed Account uygulamaları: ['TOAD', 'WINSCP', 'MSSQL']
+2025-07-14 12:20:22 - Row 32: IP 10.11.0.31 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:22 - Row 32: AD Managed Account 'pam11184' zaten mevcut. Atlandı.
+2025-07-14 12:20:22 - Row 32: AD hesabı 'pam11184' → IP 10.11.0.31 sistemine başarıyla linklendi.
+2025-07-14 12:20:22 - Row 32: SmartRule 'THY_MA_pam11184' zaten mevcut. Atlandı.
+2025-07-14 12:20:22 - Row 32: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:22 - Row 32: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:23 - Row 32: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:23 - Row 32: SmartRule (ID: 11640) başarıyla group'a atandı.
+2025-07-14 12:20:23 - Row 32: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:23 - Row 32: Kullanıcı 'Q_TEST2' başarıyla gruba eklendi (GroupID: 41).
+2025-07-14 12:20:23 - Row 33: İşlem başlatıldı → Account='pam11185', System='10.11.0.32', App='SSH', Users='Q_TEST6', Port='nan', DB='nan'
+2025-07-14 12:20:23 - Row 33: Managed System tipleri: ['SSH']
+2025-07-14 12:20:23 - Row 33: Managed Account uygulamaları: []
+2025-07-14 12:20:23 - Row 33: IP 10.11.0.32 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:23 - Row 33: AD Managed Account 'pam11185' zaten mevcut. Atlandı.
+2025-07-14 12:20:24 - Row 33: AD hesabı 'pam11185' → IP 10.11.0.32 sistemine başarıyla linklendi.
+2025-07-14 12:20:24 - Row 33: SmartRule 'THY_MA_pam11185' zaten mevcut. Atlandı.
+2025-07-14 12:20:24 - Row 33: SmartRule (ID: 11643) başarıyla group'a atandı.
+2025-07-14 12:20:25 - Row 33: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:25 - Row 33: Kullanıcı 'Q_TEST6' başarıyla gruba eklendi (GroupID: 38).
+2025-07-14 12:20:25 - Row 34: İşlem başlatıldı → Account='pam11186', System='10.11.0.33', App='SSH,MSSQL', Users='Q_TEST4', Port='nan', DB='nan'
+2025-07-14 12:20:25 - Row 34: Managed System tipleri: ['SSH']
+2025-07-14 12:20:25 - Row 34: Managed Account uygulamaları: ['MSSQL']
+2025-07-14 12:20:25 - Row 34: IP 10.11.0.33 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:25 - Row 34: AD Managed Account 'pam11186' zaten mevcut. Atlandı.
+2025-07-14 12:20:25 - Row 34: AD hesabı 'pam11186' → IP 10.11.0.33 sistemine başarıyla linklendi.
+2025-07-14 12:20:25 - Row 34: SmartRule 'THY_MA_pam11186' zaten mevcut. Atlandı.
+2025-07-14 12:20:25 - Row 34: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:25 - Row 34: SmartRule (ID: 11645) başarıyla group'a atandı.
+2025-07-14 12:20:26 - Row 34: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:26 - Row 34: Kullanıcı 'Q_TEST4' başarıyla gruba eklendi (GroupID: 34).
+2025-07-14 12:20:26 - Row 35: İşlem başlatıldı → Account='pam11187', System='10.11.0.34', App='SSH,MSSQL', Users='Q_TEST8', Port='nan', DB='nan'
+2025-07-14 12:20:26 - Row 35: Managed System tipleri: ['SSH']
+2025-07-14 12:20:26 - Row 35: Managed Account uygulamaları: ['MSSQL']
+2025-07-14 12:20:26 - Row 35: IP 10.11.0.34 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:26 - Row 35: AD Managed Account 'pam11187' zaten mevcut. Atlandı.
+2025-07-14 12:20:26 - Row 35: AD hesabı 'pam11187' → IP 10.11.0.34 sistemine başarıyla linklendi.
+2025-07-14 12:20:26 - Row 35: SmartRule 'THY_MA_pam11187' zaten mevcut. Atlandı.
+2025-07-14 12:20:26 - Row 35: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:26 - Row 35: SmartRule (ID: 11649) başarıyla group'a atandı.
+2025-07-14 12:20:27 - Row 35: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:28 - Row 35: Kullanıcı 'Q_TEST8' başarıyla gruba eklendi (GroupID: 36).
+2025-07-14 12:20:28 - Row 36: İşlem başlatıldı → Account='pam11188', System='10.11.0.35', App='SSH,MSSQL,TOAD', Users='Q_TEST1', Port='nan', DB='nan'
+2025-07-14 12:20:28 - Row 36: Managed System tipleri: ['SSH']
+2025-07-14 12:20:28 - Row 36: Managed Account uygulamaları: ['MSSQL', 'TOAD']
+2025-07-14 12:20:28 - Row 36: IP 10.11.0.35 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:28 - Row 36: AD Managed Account 'pam11188' zaten mevcut. Atlandı.
+2025-07-14 12:20:28 - Row 36: AD hesabı 'pam11188' → IP 10.11.0.35 sistemine başarıyla linklendi.
+2025-07-14 12:20:28 - Row 36: SmartRule 'THY_MA_pam11188' zaten mevcut. Atlandı.
+2025-07-14 12:20:28 - Row 36: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:28 - Row 36: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:28 - Row 36: SmartRule (ID: 11650) başarıyla group'a atandı.
+2025-07-14 12:20:28 - Row 36: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:28 - Row 36: Kullanıcı 'Q_TEST1' başarıyla gruba eklendi (GroupID: 35).
+2025-07-14 12:20:28 - Row 37: İşlem başlatıldı → Account='pam11189', System='10.11.0.36', App='SSH,TOAD,WINSCP,MSSQL', Users='Q_TEST5', Port='nan', DB='nan'
+2025-07-14 12:20:28 - Row 37: Managed System tipleri: ['SSH']
+2025-07-14 12:20:28 - Row 37: Managed Account uygulamaları: ['TOAD', 'WINSCP', 'MSSQL']
+2025-07-14 12:20:28 - Row 37: IP 10.11.0.36 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:28 - Row 37: AD Managed Account 'pam11189' zaten mevcut. Atlandı.
+2025-07-14 12:20:28 - Row 37: AD hesabı 'pam11189' → IP 10.11.0.36 sistemine başarıyla linklendi.
+2025-07-14 12:20:28 - Row 37: SmartRule 'THY_MA_pam11189' zaten mevcut. Atlandı.
+2025-07-14 12:20:28 - Row 37: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:28 - Row 37: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:28 - Row 37: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:28 - Row 37: SmartRule (ID: 11654) başarıyla group'a atandı.
+2025-07-14 12:20:29 - Row 37: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:29 - Row 37: Kullanıcı 'Q_TEST5' başarıyla gruba eklendi (GroupID: 39).
+2025-07-14 12:20:29 - Row 38: İşlem başlatıldı → Account='pam11190', System='10.11.0.37', App='SSH,MSSQL', Users='Q_TEST4', Port='nan', DB='nan'
+2025-07-14 12:20:29 - Row 38: Managed System tipleri: ['SSH']
+2025-07-14 12:20:29 - Row 38: Managed Account uygulamaları: ['MSSQL']
+2025-07-14 12:20:29 - Row 38: IP 10.11.0.37 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:29 - Row 38: AD Managed Account 'pam11190' zaten mevcut. Atlandı.
+2025-07-14 12:20:29 - Row 38: AD hesabı 'pam11190' → IP 10.11.0.37 sistemine başarıyla linklendi.
+2025-07-14 12:20:29 - Row 38: SmartRule 'THY_MA_pam11190' zaten mevcut. Atlandı.
+2025-07-14 12:20:29 - Row 38: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:29 - Row 38: SmartRule (ID: 11657) başarıyla group'a atandı.
+2025-07-14 12:20:29 - Row 38: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:29 - Row 38: Kullanıcı 'Q_TEST4' başarıyla gruba eklendi (GroupID: 34).
+2025-07-14 12:20:29 - Row 39: İşlem başlatıldı → Account='pam11191', System='10.11.0.38', App='SSH,TOAD', Users='Q_TEST8', Port='nan', DB='nan'
+2025-07-14 12:20:29 - Row 39: Managed System tipleri: ['SSH']
+2025-07-14 12:20:29 - Row 39: Managed Account uygulamaları: ['TOAD']
+2025-07-14 12:20:29 - Row 39: IP 10.11.0.38 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:29 - Row 39: AD Managed Account 'pam11191' zaten mevcut. Atlandı.
+2025-07-14 12:20:29 - Row 39: AD hesabı 'pam11191' → IP 10.11.0.38 sistemine başarıyla linklendi.
+2025-07-14 12:20:29 - Row 39: SmartRule 'THY_MA_pam11191' zaten mevcut. Atlandı.
+2025-07-14 12:20:29 - Row 39: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:29 - Row 39: SmartRule (ID: 11660) başarıyla group'a atandı.
+2025-07-14 12:20:30 - Row 39: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:30 - Row 39: Kullanıcı 'Q_TEST8' başarıyla gruba eklendi (GroupID: 36).
+2025-07-14 12:20:30 - Row 40: İşlem başlatıldı → Account='pam11192', System='10.11.0.39', App='SSH,TOAD,WINSCP', Users='Q_TEST8', Port='nan', DB='nan'
+2025-07-14 12:20:30 - Row 40: Managed System tipleri: ['SSH']
+2025-07-14 12:20:30 - Row 40: Managed Account uygulamaları: ['TOAD', 'WINSCP']
+2025-07-14 12:20:30 - Row 40: IP 10.11.0.39 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:30 - Row 40: AD Managed Account 'pam11192' zaten mevcut. Atlandı.
+2025-07-14 12:20:30 - Row 40: AD hesabı 'pam11192' → IP 10.11.0.39 sistemine başarıyla linklendi.
+2025-07-14 12:20:30 - Row 40: SmartRule 'THY_MA_pam11192' zaten mevcut. Atlandı.
+2025-07-14 12:20:30 - Row 40: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:31 - Row 40: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:31 - Row 40: SmartRule (ID: 11663) başarıyla group'a atandı.
+2025-07-14 12:20:31 - Row 40: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:32 - Row 40: Kullanıcı 'Q_TEST8' başarıyla gruba eklendi (GroupID: 36).
+2025-07-14 12:20:32 - Row 41: İşlem başlatıldı → Account='pam11193', System='10.11.0.40', App='SSH,MSSQL,TOAD', Users='Q_TEST9', Port='nan', DB='nan'
+2025-07-14 12:20:32 - Row 41: Managed System tipleri: ['SSH']
+2025-07-14 12:20:32 - Row 41: Managed Account uygulamaları: ['MSSQL', 'TOAD']
+2025-07-14 12:20:32 - Row 41: IP 10.11.0.40 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:32 - Row 41: AD Managed Account 'pam11193' zaten mevcut. Atlandı.
+2025-07-14 12:20:32 - Row 41: AD hesabı 'pam11193' → IP 10.11.0.40 sistemine başarıyla linklendi.
+2025-07-14 12:20:32 - Row 41: SmartRule 'THY_MA_pam11193' zaten mevcut. Atlandı.
+2025-07-14 12:20:32 - Row 41: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:33 - Row 41: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:33 - Row 41: SmartRule (ID: 11666) başarıyla group'a atandı.
+2025-07-14 12:20:33 - Row 41: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:33 - Row 41: Kullanıcı 'Q_TEST9' başarıyla gruba eklendi (GroupID: 40).
+2025-07-14 12:20:33 - Row 42: İşlem başlatıldı → Account='pam11194', System='10.11.0.41', App='SSH', Users='Q_TEST1', Port='nan', DB='nan'
+2025-07-14 12:20:33 - Row 42: Managed System tipleri: ['SSH']
+2025-07-14 12:20:33 - Row 42: Managed Account uygulamaları: []
+2025-07-14 12:20:33 - Row 42: IP 10.11.0.41 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:33 - Row 42: AD Managed Account 'pam11194' zaten mevcut. Atlandı.
+2025-07-14 12:20:33 - Row 42: AD hesabı 'pam11194' → IP 10.11.0.41 sistemine başarıyla linklendi.
+2025-07-14 12:20:33 - Row 42: SmartRule 'THY_MA_pam11194' zaten mevcut. Atlandı.
+2025-07-14 12:20:33 - Row 42: SmartRule (ID: 11668) başarıyla group'a atandı.
+2025-07-14 12:20:34 - Row 42: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:34 - Row 42: Kullanıcı 'Q_TEST1' başarıyla gruba eklendi (GroupID: 35).
+2025-07-14 12:20:34 - Row 43: İşlem başlatıldı → Account='pam11195', System='10.11.0.42', App='SSH,MSSQL', Users='Q_TEST9', Port='nan', DB='nan'
+2025-07-14 12:20:34 - Row 43: Managed System tipleri: ['SSH']
+2025-07-14 12:20:34 - Row 43: Managed Account uygulamaları: ['MSSQL']
+2025-07-14 12:20:34 - Row 43: IP 10.11.0.42 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:34 - Row 43: AD Managed Account 'pam11195' zaten mevcut. Atlandı.
+2025-07-14 12:20:34 - Row 43: AD hesabı 'pam11195' → IP 10.11.0.42 sistemine başarıyla linklendi.
+2025-07-14 12:20:34 - Row 43: SmartRule 'THY_MA_pam11195' zaten mevcut. Atlandı.
+2025-07-14 12:20:34 - Row 43: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:34 - Row 43: SmartRule (ID: 11670) başarıyla group'a atandı.
+2025-07-14 12:20:35 - Row 43: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:35 - Row 43: Kullanıcı 'Q_TEST9' başarıyla gruba eklendi (GroupID: 40).
+2025-07-14 12:20:35 - Row 44: İşlem başlatıldı → Account='pam11196', System='10.11.0.43', App='SSH,MSSQL,WINSCP,TOAD', Users='Q_TEST5', Port='nan', DB='nan'
+2025-07-14 12:20:35 - Row 44: Managed System tipleri: ['SSH']
+2025-07-14 12:20:35 - Row 44: Managed Account uygulamaları: ['MSSQL', 'WINSCP', 'TOAD']
+2025-07-14 12:20:35 - Row 44: IP 10.11.0.43 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:35 - Row 44: AD Managed Account 'pam11196' zaten mevcut. Atlandı.
+2025-07-14 12:20:35 - Row 44: AD hesabı 'pam11196' → IP 10.11.0.43 sistemine başarıyla linklendi.
+2025-07-14 12:20:35 - Row 44: SmartRule 'THY_MA_pam11196' zaten mevcut. Atlandı.
+2025-07-14 12:20:35 - Row 44: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:36 - Row 44: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:36 - Row 44: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:37 - Row 44: SmartRule (ID: 11671) başarıyla group'a atandı.
+2025-07-14 12:20:37 - Row 44: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:38 - Row 44: Kullanıcı 'Q_TEST5' başarıyla gruba eklendi (GroupID: 39).
+2025-07-14 12:20:38 - Row 45: İşlem başlatıldı → Account='pam11197', System='10.11.0.44', App='SSH,MSSQL,TOAD', Users='Q_TEST2', Port='nan', DB='nan'
+2025-07-14 12:20:38 - Row 45: Managed System tipleri: ['SSH']
+2025-07-14 12:20:38 - Row 45: Managed Account uygulamaları: ['MSSQL', 'TOAD']
+2025-07-14 12:20:38 - Row 45: IP 10.11.0.44 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:38 - Row 45: AD Managed Account 'pam11197' zaten mevcut. Atlandı.
+2025-07-14 12:20:38 - Row 45: AD hesabı 'pam11197' → IP 10.11.0.44 sistemine başarıyla linklendi.
+2025-07-14 12:20:38 - Row 45: SmartRule 'THY_MA_pam11197' zaten mevcut. Atlandı.
+2025-07-14 12:20:38 - Row 45: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:38 - Row 45: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:38 - Row 45: SmartRule (ID: 11673) başarıyla group'a atandı.
+2025-07-14 12:20:38 - Row 45: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:38 - Row 45: Kullanıcı 'Q_TEST2' başarıyla gruba eklendi (GroupID: 41).
+2025-07-14 12:20:38 - Row 46: İşlem başlatıldı → Account='pam11198', System='10.11.0.45', App='SSH,MSSQL,WINSCP', Users='Q_TEST6', Port='nan', DB='nan'
+2025-07-14 12:20:38 - Row 46: Managed System tipleri: ['SSH']
+2025-07-14 12:20:38 - Row 46: Managed Account uygulamaları: ['MSSQL', 'WINSCP']
+2025-07-14 12:20:38 - Row 46: IP 10.11.0.45 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:38 - Row 46: AD Managed Account 'pam11198' zaten mevcut. Atlandı.
+2025-07-14 12:20:38 - Row 46: AD hesabı 'pam11198' → IP 10.11.0.45 sistemine başarıyla linklendi.
+2025-07-14 12:20:38 - Row 46: SmartRule 'THY_MA_pam11198' zaten mevcut. Atlandı.
+2025-07-14 12:20:38 - Row 46: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:38 - Row 46: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:38 - Row 46: SmartRule (ID: 11677) başarıyla group'a atandı.
+2025-07-14 12:20:38 - Row 46: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:38 - Row 46: Kullanıcı 'Q_TEST6' başarıyla gruba eklendi (GroupID: 38).
+2025-07-14 12:20:38 - Row 47: İşlem başlatıldı → Account='pam11199', System='10.11.0.46', App='SSH', Users='Q_TEST7', Port='nan', DB='nan'
+2025-07-14 12:20:38 - Row 47: Managed System tipleri: ['SSH']
+2025-07-14 12:20:38 - Row 47: Managed Account uygulamaları: []
+2025-07-14 12:20:39 - Row 47: IP 10.11.0.46 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:39 - Row 47: AD Managed Account 'pam11199' zaten mevcut. Atlandı.
+2025-07-14 12:20:39 - Row 47: AD hesabı 'pam11199' → IP 10.11.0.46 sistemine başarıyla linklendi.
+2025-07-14 12:20:39 - Row 47: SmartRule 'THY_MA_pam11199' zaten mevcut. Atlandı.
+2025-07-14 12:20:39 - Row 47: SmartRule (ID: 11678) başarıyla group'a atandı.
+2025-07-14 12:20:39 - Row 47: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:39 - Row 47: Kullanıcı 'Q_TEST7' başarıyla gruba eklendi (GroupID: 37).
+2025-07-14 12:20:39 - Row 48: İşlem başlatıldı → Account='pam11200', System='10.11.0.47', App='SSH,MSSQL,WINSCP', Users='Q_TEST9', Port='nan', DB='nan'
+2025-07-14 12:20:39 - Row 48: Managed System tipleri: ['SSH']
+2025-07-14 12:20:39 - Row 48: Managed Account uygulamaları: ['MSSQL', 'WINSCP']
+2025-07-14 12:20:39 - Row 48: IP 10.11.0.47 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:39 - Row 48: AD Managed Account 'pam11200' zaten mevcut. Atlandı.
+2025-07-14 12:20:39 - Row 48: AD hesabı 'pam11200' → IP 10.11.0.47 sistemine başarıyla linklendi.
+2025-07-14 12:20:39 - Row 48: SmartRule 'THY_MA_pam11200' zaten mevcut. Atlandı.
+2025-07-14 12:20:39 - Row 48: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:39 - Row 48: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:39 - Row 48: SmartRule (ID: 11681) başarıyla group'a atandı.
+2025-07-14 12:20:39 - Row 48: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:39 - Row 48: Kullanıcı 'Q_TEST9' başarıyla gruba eklendi (GroupID: 40).
+2025-07-14 12:20:39 - Row 49: İşlem başlatıldı → Account='pam11201', System='10.11.0.48', App='SSH,MSSQL,TOAD', Users='Q_TEST8', Port='nan', DB='nan'
+2025-07-14 12:20:39 - Row 49: Managed System tipleri: ['SSH']
+2025-07-14 12:20:39 - Row 49: Managed Account uygulamaları: ['MSSQL', 'TOAD']
+2025-07-14 12:20:39 - Row 49: IP 10.11.0.48 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:39 - Row 49: AD Managed Account 'pam11201' zaten mevcut. Atlandı.
+2025-07-14 12:20:40 - Row 49: AD hesabı 'pam11201' → IP 10.11.0.48 sistemine başarıyla linklendi.
+2025-07-14 12:20:40 - Row 49: SmartRule 'THY_MA_pam11201' zaten mevcut. Atlandı.
+2025-07-14 12:20:40 - Row 49: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:40 - Row 49: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:40 - Row 49: SmartRule (ID: 11684) başarıyla group'a atandı.
+2025-07-14 12:20:40 - Row 49: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:40 - Row 49: Kullanıcı 'Q_TEST8' başarıyla gruba eklendi (GroupID: 36).
+2025-07-14 12:20:40 - Row 50: İşlem başlatıldı → Account='pam11202', System='10.11.0.49', App='SSH,TOAD', Users='Q_TEST6', Port='nan', DB='nan'
+2025-07-14 12:20:40 - Row 50: Managed System tipleri: ['SSH']
+2025-07-14 12:20:40 - Row 50: Managed Account uygulamaları: ['TOAD']
+2025-07-14 12:20:40 - Row 50: IP 10.11.0.49 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:40 - Row 50: AD Managed Account 'pam11202' zaten mevcut. Atlandı.
+2025-07-14 12:20:41 - Row 50: AD hesabı 'pam11202' → IP 10.11.0.49 sistemine başarıyla linklendi.
+2025-07-14 12:20:41 - Row 50: SmartRule 'THY_MA_pam11202' zaten mevcut. Atlandı.
+2025-07-14 12:20:42 - Row 50: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:42 - Row 50: SmartRule (ID: 11687) başarıyla group'a atandı.
+2025-07-14 12:20:42 - Row 50: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:42 - Row 50: Kullanıcı 'Q_TEST6' başarıyla gruba eklendi (GroupID: 38).
+2025-07-14 12:20:42 - Row 51: İşlem başlatıldı → Account='pam11203', System='10.11.0.50', App='SSH,TOAD,MSSQL,WINSCP', Users='Q_TEST2,Q_TEST4', Port='nan', DB='nan'
+2025-07-14 12:20:42 - Row 51: Managed System tipleri: ['SSH']
+2025-07-14 12:20:42 - Row 51: Managed Account uygulamaları: ['TOAD', 'MSSQL', 'WINSCP']
+2025-07-14 12:20:42 - Row 51: IP 10.11.0.50 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:42 - Row 51: AD Managed Account 'pam11203' zaten mevcut. Atlandı.
+2025-07-14 12:20:42 - Row 51: AD hesabı 'pam11203' → IP 10.11.0.50 sistemine başarıyla linklendi.
+2025-07-14 12:20:42 - Row 51: SmartRule 'THY_MA_pam11203' zaten mevcut. Atlandı.
+2025-07-14 12:20:42 - Row 51: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:42 - Row 51: ApplicationID 3 zaten atanmış. Atlandı.
+2025-07-14 12:20:42 - Row 51: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:42 - Row 51: SmartRule (ID: 11691) başarıyla group'a atandı.
+2025-07-14 12:20:42 - Row 51: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:42 - Row 51: Kullanıcı 'Q_TEST2' başarıyla gruba eklendi (GroupID: 41).
+2025-07-14 12:20:43 - Row 51: SmartRule (ID: 11691) başarıyla group'a atandı.
+2025-07-14 12:20:43 - Row 51: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:44 - Row 51: Kullanıcı 'Q_TEST4' başarıyla gruba eklendi (GroupID: 34).
+2025-07-14 12:20:44 - Row 52: İşlem başlatıldı → Account='pam11204', System='10.11.0.51', App='SSH,WINSCP,TOAD', Users='Q_TEST5', Port='nan', DB='nan'
+2025-07-14 12:20:44 - Row 52: Managed System tipleri: ['SSH']
+2025-07-14 12:20:44 - Row 52: Managed Account uygulamaları: ['WINSCP', 'TOAD']
+2025-07-14 12:20:44 - Row 52: IP 10.11.0.51 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:44 - Row 52: AD Managed Account 'pam11204' zaten mevcut. Atlandı.
+2025-07-14 12:20:44 - Row 52: AD hesabı 'pam11204' → IP 10.11.0.51 sistemine başarıyla linklendi.
+2025-07-14 12:20:44 - Row 52: SmartRule 'THY_MA_pam11204' zaten mevcut. Atlandı.
+2025-07-14 12:20:44 - Row 52: ApplicationID 4 zaten atanmış. Atlandı.
+2025-07-14 12:20:44 - Row 52: ApplicationID 5 zaten atanmış. Atlandı.
+2025-07-14 12:20:44 - Row 52: SmartRule (ID: 11694) başarıyla group'a atandı.
+2025-07-14 12:20:45 - Row 52: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:45 - Row 52: Kullanıcı 'Q_TEST5' başarıyla gruba eklendi (GroupID: 39).
+2025-07-14 12:20:45 - Row 53: İşlem başlatıldı → Account='pam11205', System='10.11.0.52', App='SSH', Users='Q_TEST2', Port='nan', DB='nan'
+2025-07-14 12:20:45 - Row 53: Managed System tipleri: ['SSH']
+2025-07-14 12:20:45 - Row 53: Managed Account uygulamaları: []
+2025-07-14 12:20:45 - Row 53: IP 10.11.0.52 zaten SSH managed system olarak mevcut. Atlandı.
+2025-07-14 12:20:45 - Row 53: AD Managed Account 'pam11205' zaten mevcut. Atlandı.
+2025-07-14 12:20:45 - Row 53: AD hesabı 'pam11205' → IP 10.11.0.52 sistemine başarıyla linklendi.
+2025-07-14 12:20:45 - Row 53: SmartRule 'THY_MA_pam11205' zaten mevcut. Atlandı.
+2025-07-14 12:20:46 - Row 53: SmartRule (ID: 11695) başarıyla group'a atandı.
+2025-07-14 12:20:46 - Row 53: Role ve AccessPolicy başarıyla atandı.
+2025-07-14 12:20:47 - Row 53: Kullanıcı 'Q_TEST2' başarıyla gruba eklendi (GroupID: 41).
+2025-07-14 12:20:47 - Row 54: İşlem başlatıldı → Account='pam11206', System='10.11.0.53', App='SSH,WINSCP,MSSQL', Users='Q_TEST8', Port='nan', DB='nan'
+2025-07-14 12:20:47 - Row 54: Managed System tipleri: ['SSH']
+2025-07-14 12:20:47 - Row 54: Managed Account uygulamaları: ['WINSCP', 'MSSQL']
+2025-07-14 12:20:47 - Row 54: IP 10.11.0.53 zaten SSH managed system olarak mevcut. Atlandı.

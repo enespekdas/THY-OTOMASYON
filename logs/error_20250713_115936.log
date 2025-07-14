@@ -1,9 +1,0 @@
-2025-07-13 11:59:51 - Excel Row 6 -- [Error Type] = Network -- [Hostname] = standby3.quasys.locals -- Hostname çözümlenemedi.
-2025-07-13 11:59:51 - Excel Row 7 -- [Error Type] = LocalAccount -- [Hostname] = 192.168.10.20 -- IP '192.168.10.20' için hedef managed system bulunamadı (local hesap ekleme iptal). Application Column List: SQL DEV
-2025-07-13 11:59:52 - Excel Row 7 -- [Error Type] = ApplicationAssign -- [Hostname] = 192.168.10.20 -- Managed system bulunamadı (IP: 192.168.10.20).
-2025-07-13 11:59:52 - Excel Row 8 -- [Error Type] = LocalAccount -- [Hostname] = 192.168.10.37 -- IP '192.168.10.37' için hedef managed system bulunamadı (local hesap ekleme iptal). Application Column List: DBAVER
-2025-07-13 11:59:52 - Excel Row 8 -- [Error Type] = ApplicationAssign -- [Hostname] = 192.168.10.37 -- Managed system bulunamadı (IP: 192.168.10.37).
-2025-07-13 11:59:55 - Excel Row 9 -- [Error Type] = UserCreate -- [Hostname] =  -- Kullanıcı oluşturulamadı: 400 - "Active Directory user A_OZKAL, domain quasys.local not found"
-2025-07-13 11:59:55 - Excel Row 9 -- [Error Type] = UserGroupMembership -- [Hostname] =  -- Kullanıcı bulunamadı: A_OZKAL
-2025-07-13 11:59:58 - Excel Row 10 -- [Error Type] = UserCreate -- [Hostname] =  -- Kullanıcı oluşturulamadı: 400 - "Active Directory user A_OZKAL, domain quasys.local not found"
-2025-07-13 11:59:58 - Excel Row 10 -- [Error Type] = UserGroupMembership -- [Hostname] =  -- Kullanıcı bulunamadı: A_OZKAL

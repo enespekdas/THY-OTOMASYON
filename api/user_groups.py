@@ -12,16 +12,21 @@ from config.settings import (
     BIND_PASSWORD
 )
 from utils.logger import log_message, log_error
+from utils.cache import cache_data, get_cached_data
 
 def get_session_id():
     session_id = os.getenv("ASP_NET_SESSION_ID")
     if not session_id:
         log_error(-1, "Session ID bulunamadı (user groups).", error_type="Session")
-    else:
-        log_message(f"Session ID bulundu: {session_id[:8]}...")
+    # else:
+       # log_message(f"Session ID bulundu: {session_id[:8]}...")
     return session_id
 
 def get_all_user_groups():
+    cached = get_cached_data("user_groups")
+    if cached is not None:
+        return cached
+
     session_id = get_session_id()
     if not session_id:
         return []
@@ -32,8 +37,10 @@ def get_all_user_groups():
     try:
         response = requests.get(url, headers=headers, verify=False)
         if response.status_code == 200:
-            log_message("UserGroups listesi başarıyla alındı.")
-            return response.json()
+            data = response.json()
+            cache_data("user_groups", data)
+            # log_message("UserGroups listesi başarıyla alındı.")
+            return data
         else:
             log_error(-1, f"UserGroups alınamadı: {response.status_code} - {response.text}", error_type="UserGroupList")
             return []
@@ -42,6 +49,10 @@ def get_all_user_groups():
         return []
 
 def get_all_smartrules():
+    cached = get_cached_data("smartrules")
+    if cached is not None:
+        return cached
+
     session_id = get_session_id()
     if not session_id:
         return []
@@ -52,8 +63,10 @@ def get_all_smartrules():
     try:
         response = requests.get(url, headers=headers, verify=False)
         if response.status_code == 200:
-            log_message("SmartRules listesi başarıyla alındı.")
-            return response.json()
+            data = response.json()
+            cache_data("smartrules", data)
+            # log_message("SmartRules listesi başarıyla alındı.")
+            return data
         else:
             log_error(-1, f"SmartRules alınamadı: {response.status_code} - {response.text}", error_type="SmartRuleList")
             return []
@@ -71,10 +84,11 @@ def find_smartrule_id(account_name: str, ip_address: str = None):
             return None
         expected_name = f"{SMART_RULE_PREFIX}_{account_name.lower()}_{ip_address}"
 
-    for rule in smart_rules:
-        if rule.get("Title", "").lower() == expected_name.lower():
-            log_message(f"SmartRule bulundu: {expected_name} (ID: {rule['SmartRuleID']})")
-            return rule["SmartRuleID"]
+    rule = next((r for r in smart_rules if r.get("Title", "").lower() == expected_name.lower()), None)
+
+    if rule:
+        # log_message(f"SmartRule bulundu: {expected_name} (ID: {rule['SmartRuleID']})")
+        return rule["SmartRuleID"]
 
     log_message(f"SmartRule bulunamadı: {expected_name}")
     return None
@@ -117,6 +131,10 @@ def assign_smartrule_to_group(group_id: int, smart_rule_id: int, access_level_id
         return False
 
 def get_all_users():
+    cached = get_cached_data("users")
+    if cached is not None:
+        return cached
+
     session_id = get_session_id()
     if not session_id:
         return []
@@ -127,7 +145,9 @@ def get_all_users():
     try:
         response = requests.get(url, headers=headers, verify=False)
         if response.status_code == 200:
-            return response.json()
+            data = response.json()
+            cache_data("users", data)
+            return data
         else:
             log_error(-1, f"Users alınamadı: {response.status_code} - {response.text}", error_type="UserList")
             return []
@@ -170,7 +190,6 @@ def add_user_to_group(group_id: int, user_name: str, row_index: int):
     if not session_id:
         return
 
-    # Önce user listesi çekilip user_id alınmalı
     users = get_all_users()
     user = next((u for u in users if u.get("UserName", "").upper() == user_name.upper()), None)
 
@@ -192,8 +211,8 @@ def add_user_to_group(group_id: int, user_name: str, row_index: int):
     payload = {
         "GroupID": group_id,
         "Name": user_name,
-        "DistinguishedName": "",  # AD grubu değil, kullanıcı; boş bırakılabilir
-        "GroupType": "BeyondInsight",  # veya "ActiveDirectory" olabilir
+        "DistinguishedName": "",
+        "GroupType": "BeyondInsight",
         "AccountAttribute": "",
         "MembershipAttribute": "",
         "IsActive": True
@@ -208,9 +227,8 @@ def add_user_to_group(group_id: int, user_name: str, row_index: int):
     except Exception as e:
         log_error(row_index + 2, f"Group üyeliği API hatası: {str(e)}", error_type="UserGroupMembership")
 
-
 def ensure_user_groups_and_assign_smartrule(user_list: list, account_name: str, row_index: int, ip_address: str = None):
-    log_message(f"Row {row_index + 2}: Group kontrol ve atama başlatıldı. Toplam kullanıcı: {len(user_list)}")
+    #log_message(f"Row {row_index + 2}: Group kontrol ve atama başlatıldı. Toplam kullanıcı: {len(user_list)}")
 
     existing_groups = get_all_user_groups()
     existing_users = get_all_users()
@@ -274,9 +292,7 @@ def ensure_user_groups_and_assign_smartrule(user_list: list, account_name: str, 
         if not success:
             continue
 
-        # User oluşturulmamışsa oluştur
         if not any(u.get("UserName", "").upper() == group_name for u in existing_users):
             create_user(group_name, row_index)
 
-        # Kullanıcıyı gruba ekle
         add_user_to_group(group_id, group_name, row_index)
